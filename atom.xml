@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>图Tu的小站</title>
   
-  
+  <subtitle>Mens agitat molem</subtitle>
   <link href="https://rd-zhang.github.io/atom.xml" rel="self"/>
   
   <link href="https://rd-zhang.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://rd-zhang.github.io/</id>
   
   <author>
-    <name>Rundong Zhang</name>
+    <name>图图</name>
     
   </author>
   
@@ -55,6 +55,33 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>typora-vue-theme主题介绍</title>
+    <link href="https://rd-zhang.github.io/2018/09/07/second-blog/"/>
+    <id>https://rd-zhang.github.io/2018/09/07/second-blog/</id>
+    <published>2018-09-07T01:25:00.000Z</published>
+    <updated>2022-12-01T01:55:13.988Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="https://rd-zhang.github.io/categories/Markdown/"/>
+    
+    
+    <category term="Typora" scheme="https://rd-zhang.github.io/tags/Typora/"/>
+    
+    <category term="Markdown" scheme="https://rd-zhang.github.io/tags/Markdown/"/>
     
   </entry>
   
