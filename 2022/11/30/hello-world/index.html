@@ -38,7 +38,7 @@
 
    <style>
     body{
-       background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+       background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/M101_hires_STScI-PRC2006-10a.jpg/1280px-M101_hires_STScI-PRC2006-10a.jpg);
        background-repeat:no-repeat;
        background-size:cover;
        background-attachment:fixed;
@@ -740,7 +740,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/11/30/first-blog/">
+                <a href="/2022/11/30/dai-geng-xin/">
                     <div class="card-image">
                         
                         
@@ -965,7 +965,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">76</span>&nbsp;字
+                class="white-color">244</span>&nbsp;字
             
             
             
@@ -1190,6 +1190,14 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+
+    <script type="text/javascript">
+        var OriginTitile=document.title,st;
+        document.addEventListener("visibilitychange",function(){
+            document.hidden?(document.title="快回来学习！",clearTimeout(st)):(document.title="一起变得更强！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+        })
+    </script>
+
 
 </body>
 
