@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>如何使用hexo和github免费打造属于自己的博客(网站)</title>
+      <link href="/2022/12/05/hexo-zhi-zuo-ge-ren-wang-ye/"/>
+      <url>/2022/12/05/hexo-zhi-zuo-ge-ren-wang-ye/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>科学上网（2022年12月） 适用于Linux &amp; Windows</title>
       <link href="/2022/12/05/ru-he-ke-xue-shang-wang/"/>
       <url>/2022/12/05/ru-he-ke-xue-shang-wang/</url>
@@ -33,7 +58,7 @@
       <link href="/2022/12/02/bian-xie-ke-du-dai-ma-de-yi-zhu-1/"/>
       <url>/2022/12/02/bian-xie-ke-du-dai-ma-de-yi-zhu-1/</url>
       
-        <content type="html"><![CDATA[<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1>]]></content>
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>第一次被推荐这本书的时候我已经写了两年代码。尽管自己已经形成了一套命名和注释方法，但是对于代码的可阅读性并没有太过深入的思考。_<a href="https://mcusoft.files.wordpress.com/2015/04/the-art-of-readable-code.pdf">The Art of Readable Code</a>_ (中文译名<a href="https://awesome-programming-books.github.io/clean-code/%E7%BC%96%E5%86%99%E5%8F%AF%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E8%89%BA%E6%9C%AF.pdf">《编写可读代码的艺术》</a>)通过15个章节从简到繁，轻松又愉快的使你明白如何写出‘易于理解’的代码。</p><h3 id="第一章——代码应当易于理解"><a href="#第一章——代码应当易于理解" class="headerlink" title="第一章——代码应当易于理解"></a>第一章——代码应当易于理解</h3><p>==代码易于理解==是关键思想。<br>代码的写法应当使别人理解它所需的时间最小化。但是虽然减少代码行数是一个重要目标，我们的最终目标仍然是把理解代码所需时间最小化。<br>编写代码时要经常站在别的角度，想一想自己写的代码别能否轻松理解。</p><h2 id="表明层次的改进"><a href="#表明层次的改进" class="headerlink" title="表明层次的改进"></a>表明层次的改进</h2><p>可读性之旅从“表面层次”的改进开始：选择好的名字、写好的注释以及把代码整洁的写成更好的格式。</p><h3 id="第二章——把信息装进名字里"><a href="#第二章——把信息装进名字里" class="headerlink" title="第二章——把信息装进名字里"></a>第二章——把信息装进名字里</h3><p>选择专业的词语：比如fetchPage相比getPage显得更加专业而清晰；<br>避免泛泛的名字: 如tmp，retval。好的名字应当描述变量的目的或者它承载的值，除非你确定你只是临时的用一次tmp;<br>使用具体的名字更细致的描述：<a href="https://blog.csdn.net/fuhanghang/article/details/119805459">这里</a>总结了一些常用的命名方法。个人偏爱使用下划线法命名，把每个变量具体干什么使用起英文短语命名，如 <em>log_finishedinfo_when_reach_terminal</em> ;<br>给变量名加上重要细节：比如JS中的 <em>getTime()</em> 返回单位是毫秒，那么就可以给变量加上 _<em>ms</em> 的后缀;<br>名字的长度：应当遵循作用域越大名字越长的原则，比如一个字母 <em>m</em> 如果作用于全域，读者很可能不知道他是干什么的。这就好比旅行，越长的假期你总是会带越多的行李；<br>有目的的使用下划线：你可以在类成员和局部变量后面加上下划线来区分他们。</p><h3 id="第三章——不会误解的名字"><a href="#第三章——不会误解的名字" class="headerlink" title="第三章——不会误解的名字"></a>第三章——不会误解的名字</h3><p><em>Filter()</em> 是一个很好的例子，我的意思是它是一个很糟糕的命名。因为读者根本不知道这个函数是用于 <strong>筛选出</strong> 一部分结果还是 <strong>筛选掉</strong> 一部分结果！<br>而涉及到bool值的时候尽量避免诸如多重否定的文字游戏。比如 <em>is_task_finished</em> 的返回值能够直观的说明任务是否完成了。<br>对于区间的表示，推荐使用一套约定俗成的方法：</p><ul><li>min, max 表示极限</li><li>first, last 表示包含的范围(闭区间)</li><li>begin, end 表示包含的范围(开区间)</li><li>etc…</li></ul><p>总之，你应该三思，别人是否会对命名产生不一样的理解。</p><h3 id="第四章——审美"><a href="#第四章——审美" class="headerlink" title="第四章——审美"></a>第四章——审美</h3><p>好的代码应该看上去 <strong>养眼</strong> ，三条原则：</p><ul><li>使用一致的布局，让读者很快就能习惯这种风格</li><li>让相似的代码看上去相似</li><li>把相关的代码分组，形成代码块</li></ul>]]></content>
       
       
       <categories>
@@ -60,7 +85,7 @@
       <link href="/2022/12/01/dai-geng-xin/"/>
       <url>/2022/12/01/dai-geng-xin/</url>
       
-        <content type="html"><![CDATA[<h3 id="科学上网工具"><a href="#科学上网工具" class="headerlink" title="科学上网工具"></a><del>科学上网工具</del></h3><h3 id="如何用hexo搭建自己网站-如何用matery主题"><a href="#如何用hexo搭建自己网站-如何用matery主题" class="headerlink" title="如何用hexo搭建自己网站+如何用matery主题"></a>如何用hexo搭建自己网站+如何用matery主题</h3><h3 id="ubuntu下实用小工具推荐"><a href="#ubuntu下实用小工具推荐" class="headerlink" title="ubuntu下实用小工具推荐"></a>ubuntu下实用小工具推荐</h3><h3 id="学习编程的一些网站、在线IDE推荐"><a href="#学习编程的一些网站、在线IDE推荐" class="headerlink" title="学习编程的一些网站、在线IDE推荐"></a>学习编程的一些网站、在线IDE推荐</h3><h3 id="有价值的网站收藏"><a href="#有价值的网站收藏" class="headerlink" title="有价值的网站收藏"></a>有价值的网站收藏</h3><h3 id="c-学习系列"><a href="#c-学习系列" class="headerlink" title="c++学习系列"></a>c++学习系列</h3><h3 id="数据结构和算法学习系列"><a href="#数据结构和算法学习系列" class="headerlink" title="数据结构和算法学习系列"></a>数据结构和算法学习系列</h3><h3 id="一些有趣的开源项目分享"><a href="#一些有趣的开源项目分享" class="headerlink" title="一些有趣的开源项目分享"></a>一些有趣的开源项目分享</h3><h3 id="生活随笔、杂谈系列"><a href="#生活随笔、杂谈系列" class="headerlink" title="生活随笔、杂谈系列"></a>生活随笔、杂谈系列</h3><h3 id="娱乐系列，音乐、影视推荐"><a href="#娱乐系列，音乐、影视推荐" class="headerlink" title="娱乐系列，音乐、影视推荐"></a>娱乐系列，音乐、影视推荐</h3>]]></content>
+        <content type="html"><![CDATA[<h3 id="科学上网工具"><a href="#科学上网工具" class="headerlink" title="科学上网工具"></a><del>科学上网工具</del></h3><h3 id="如何用hexo搭建自己网站-如何用matery主题"><a href="#如何用hexo搭建自己网站-如何用matery主题" class="headerlink" title="如何用hexo搭建自己网站+如何用matery主题"></a><del>如何用hexo搭建自己网站+如何用matery主题</del></h3><h3 id="Linux实用小工具推荐"><a href="#Linux实用小工具推荐" class="headerlink" title="Linux实用小工具推荐"></a>Linux实用小工具推荐</h3><h3 id="有价值的网站收藏"><a href="#有价值的网站收藏" class="headerlink" title="有价值的网站收藏"></a>有价值的网站收藏</h3><h3 id="c-学习系列"><a href="#c-学习系列" class="headerlink" title="c++学习系列"></a>c++学习系列</h3><h3 id="数据结构和算法学习系列"><a href="#数据结构和算法学习系列" class="headerlink" title="数据结构和算法学习系列"></a>数据结构和算法学习系列</h3><h3 id="一些有趣的开源项目分享"><a href="#一些有趣的开源项目分享" class="headerlink" title="一些有趣的开源项目分享"></a>一些有趣的开源项目分享</h3><h3 id="生活随笔、杂谈系列"><a href="#生活随笔、杂谈系列" class="headerlink" title="生活随笔、杂谈系列"></a>生活随笔、杂谈系列</h3><h3 id="娱乐系列，音乐、影视推荐"><a href="#娱乐系列，音乐、影视推荐" class="headerlink" title="娱乐系列，音乐、影视推荐"></a>娱乐系列，音乐、影视推荐</h3>]]></content>
       
       
       <categories>
