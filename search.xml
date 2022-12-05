@@ -5,47 +5,33 @@
     
     <entry>
       <title>科学上网（2022年12月） 适用于Linux &amp; Windows</title>
-      <link href="/2022/12/02/ru-he-ke-xue-shang-wang/"/>
-      <url>/2022/12/02/ru-he-ke-xue-shang-wang/</url>
+      <link href="/2022/12/05/ru-he-ke-xue-shang-wang/"/>
+      <url>/2022/12/05/ru-he-ke-xue-shang-wang/</url>
       
-        <content type="html"><![CDATA[<p>作为一名工程师，我们不得不使用stackoverflow，github等网站。由于众所周知的原因，我们需要科学上网工具，在此推荐一款便宜好用的梯子，适用于全平台:<br><a href="https://windscribe.com/">Windscribe</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>first blog!</title>
-      <link href="/2022/11/30/dai-geng-xin/"/>
-      <url>/2022/11/30/dai-geng-xin/</url>
-      
-        <content type="html"><![CDATA[<h2 id="如何用hexo搭建自己网站-如何用matery主题"><a href="#如何用hexo搭建自己网站-如何用matery主题" class="headerlink" title="如何用hexo搭建自己网站+如何用matery主题"></a>如何用hexo搭建自己网站+如何用matery主题</h2><h2 id="科学上网工具"><a href="#科学上网工具" class="headerlink" title="科学上网工具"></a>科学上网工具</h2><h2 id="ubuntu实用小工具推荐"><a href="#ubuntu实用小工具推荐" class="headerlink" title="ubuntu实用小工具推荐"></a>ubuntu实用小工具推荐</h2><h2 id="学习编程的一些网站、在线IDE推荐"><a href="#学习编程的一些网站、在线IDE推荐" class="headerlink" title="学习编程的一些网站、在线IDE推荐"></a>学习编程的一些网站、在线IDE推荐</h2><h2 id="我觉得有价值的网站收藏"><a href="#我觉得有价值的网站收藏" class="headerlink" title="我觉得有价值的网站收藏"></a>我觉得有价值的网站收藏</h2><h2 id="学习c-单开一个系列"><a href="#学习c-单开一个系列" class="headerlink" title="学习c++单开一个系列"></a>学习c++单开一个系列</h2><h2 id="学习数据结构和算法攻略单开一个系列"><a href="#学习数据结构和算法攻略单开一个系列" class="headerlink" title="学习数据结构和算法攻略单开一个系列"></a>学习数据结构和算法攻略单开一个系列</h2><h2 id="一些有趣的开源项目分享"><a href="#一些有趣的开源项目分享" class="headerlink" title="一些有趣的开源项目分享"></a>一些有趣的开源项目分享</h2><h2 id="生活随笔、杂谈开一个系列"><a href="#生活随笔、杂谈开一个系列" class="headerlink" title="生活随笔、杂谈开一个系列"></a>生活随笔、杂谈开一个系列</h2><h2 id="娱乐开一个系列，音乐、影视。。"><a href="#娱乐开一个系列，音乐、影视。。" class="headerlink" title="娱乐开一个系列，音乐、影视。。"></a>娱乐开一个系列，音乐、影视。。</h2>]]></content>
+        <content type="html"><![CDATA[<p>作为机器人工程师，我们不得不使用stackoverflow，github等网站。</p><p>由于众所周知的原因，我们需要科学上网工具，在此推荐一款便宜好用的梯子，适用于全平台:<br><a href="https://windscribe.com/">Windscribe</a><br>它不仅节点多，速度快，而且便宜。支持按照节点数购买，一个地区的节点一个月仅需一刀。</p><p>如果你的电脑不能打开windscibe官网，可以在<a href="https://github.com/rd-zhang/windscribe_deb">这里</a>下载deb安装包。</p>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2022/11/30/hello-world/"/>
-      <url>/2022/11/30/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
       
       
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>typora-vue-theme主题介绍</title>
-      <link href="/2018/09/07/second-blog/"/>
-      <url>/2018/09/07/second-blog/</url>
+      <title>《编写可读代码的艺术》(一)</title>
+      <link href="/2022/12/02/bian-xie-ke-du-dai-ma-de-yi-zhu-1/"/>
+      <url>/2022/12/02/bian-xie-ke-du-dai-ma-de-yi-zhu-1/</url>
       
         <content type="html"><![CDATA[<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1>]]></content>
       
@@ -59,11 +45,30 @@
       
         <tags>
             
-            <tag> Typora </tag>
-            
             <tag> Markdown </tag>
             
+            <tag> 读书分享 </tag>
+            
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>待更新清单</title>
+      <link href="/2022/12/01/dai-geng-xin/"/>
+      <url>/2022/12/01/dai-geng-xin/</url>
+      
+        <content type="html"><![CDATA[<h3 id="科学上网工具"><a href="#科学上网工具" class="headerlink" title="科学上网工具"></a><del>科学上网工具</del></h3><h3 id="如何用hexo搭建自己网站-如何用matery主题"><a href="#如何用hexo搭建自己网站-如何用matery主题" class="headerlink" title="如何用hexo搭建自己网站+如何用matery主题"></a>如何用hexo搭建自己网站+如何用matery主题</h3><h3 id="ubuntu下实用小工具推荐"><a href="#ubuntu下实用小工具推荐" class="headerlink" title="ubuntu下实用小工具推荐"></a>ubuntu下实用小工具推荐</h3><h3 id="学习编程的一些网站、在线IDE推荐"><a href="#学习编程的一些网站、在线IDE推荐" class="headerlink" title="学习编程的一些网站、在线IDE推荐"></a>学习编程的一些网站、在线IDE推荐</h3><h3 id="有价值的网站收藏"><a href="#有价值的网站收藏" class="headerlink" title="有价值的网站收藏"></a>有价值的网站收藏</h3><h3 id="c-学习系列"><a href="#c-学习系列" class="headerlink" title="c++学习系列"></a>c++学习系列</h3><h3 id="数据结构和算法学习系列"><a href="#数据结构和算法学习系列" class="headerlink" title="数据结构和算法学习系列"></a>数据结构和算法学习系列</h3><h3 id="一些有趣的开源项目分享"><a href="#一些有趣的开源项目分享" class="headerlink" title="一些有趣的开源项目分享"></a>一些有趣的开源项目分享</h3><h3 id="生活随笔、杂谈系列"><a href="#生活随笔、杂谈系列" class="headerlink" title="生活随笔、杂谈系列"></a>生活随笔、杂谈系列</h3><h3 id="娱乐系列，音乐、影视推荐"><a href="#娱乐系列，音乐、影视推荐" class="headerlink" title="娱乐系列，音乐、影视推荐"></a>娱乐系列，音乐、影视推荐</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 待更新 </category>
+          
+      </categories>
+      
       
     </entry>
     

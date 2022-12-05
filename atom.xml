@@ -6,7 +6,7 @@
   <link href="https://rd-zhang.github.io/atom.xml" rel="self"/>
   
   <link href="https://rd-zhang.github.io/"/>
-  <updated>2022-12-02T08:52:54.761Z</updated>
+  <updated>2022-12-05T04:13:15.044Z</updated>
   <id>https://rd-zhang.github.io/</id>
   
   <author>
@@ -18,73 +18,36 @@
   
   <entry>
     <title>科学上网（2022年12月） 适用于Linux &amp; Windows</title>
-    <link href="https://rd-zhang.github.io/2022/12/02/ru-he-ke-xue-shang-wang/"/>
-    <id>https://rd-zhang.github.io/2022/12/02/ru-he-ke-xue-shang-wang/</id>
-    <published>2022-12-02T08:49:08.933Z</published>
-    <updated>2022-12-02T08:52:54.761Z</updated>
+    <link href="https://rd-zhang.github.io/2022/12/05/ru-he-ke-xue-shang-wang/"/>
+    <id>https://rd-zhang.github.io/2022/12/05/ru-he-ke-xue-shang-wang/</id>
+    <published>2022-12-04T16:00:00.000Z</published>
+    <updated>2022-12-05T04:13:15.044Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;作为一名工程师，我们不得不使用stackoverflow，github等网站。由于众所周知的原因，我们需要科学上网工具，在此推荐一款便宜好用的梯子，适用于全平台:&lt;br&gt;&lt;a</summary>
+    <summary type="html">&lt;p&gt;作为机器人工程师，我们不得不使用stackoverflow，github等网站。&lt;/p&gt;
+&lt;p&gt;由于众所周知的原因，我们需要科学上网工具，在此推荐一款便宜好用的梯子，适用于全平台:&lt;br&gt;&lt;a</summary>
         
       
     
     
     
+    <category term="分享" scheme="https://rd-zhang.github.io/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="分享" scheme="https://rd-zhang.github.io/tags/%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
   <entry>
-    <title>first blog!</title>
-    <link href="https://rd-zhang.github.io/2022/11/30/dai-geng-xin/"/>
-    <id>https://rd-zhang.github.io/2022/11/30/dai-geng-xin/</id>
-    <published>2022-11-30T02:25:10.905Z</published>
-    <updated>2022-12-02T06:14:44.378Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;如何用hexo搭建自己网站-如何用matery主题&quot;&gt;&lt;a href=&quot;#如何用hexo搭建自己网站-如何用matery主题&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://rd-zhang.github.io/2022/11/30/hello-world/"/>
-    <id>https://rd-zhang.github.io/2022/11/30/hello-world/</id>
-    <published>2022-11-30T02:25:10.601Z</published>
-    <updated>2022-11-29T11:04:03.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>typora-vue-theme主题介绍</title>
-    <link href="https://rd-zhang.github.io/2018/09/07/second-blog/"/>
-    <id>https://rd-zhang.github.io/2018/09/07/second-blog/</id>
-    <published>2018-09-07T01:25:00.000Z</published>
-    <updated>2022-12-01T01:55:13.988Z</updated>
+    <title>《编写可读代码的艺术》(一)</title>
+    <link href="https://rd-zhang.github.io/2022/12/02/bian-xie-ke-du-dai-ma-de-yi-zhu-1/"/>
+    <id>https://rd-zhang.github.io/2022/12/02/bian-xie-ke-du-dai-ma-de-yi-zhu-1/</id>
+    <published>2022-12-01T16:00:00.000Z</published>
+    <updated>2022-12-05T03:56:47.727Z</updated>
     
     
       
@@ -100,9 +63,32 @@
     <category term="Markdown" scheme="https://rd-zhang.github.io/categories/Markdown/"/>
     
     
-    <category term="Typora" scheme="https://rd-zhang.github.io/tags/Typora/"/>
-    
     <category term="Markdown" scheme="https://rd-zhang.github.io/tags/Markdown/"/>
+    
+    <category term="读书分享" scheme="https://rd-zhang.github.io/tags/%E8%AF%BB%E4%B9%A6%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>待更新清单</title>
+    <link href="https://rd-zhang.github.io/2022/12/01/dai-geng-xin/"/>
+    <id>https://rd-zhang.github.io/2022/12/01/dai-geng-xin/</id>
+    <published>2022-11-30T16:00:00.000Z</published>
+    <updated>2022-12-05T04:12:13.984Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;科学上网工具&quot;&gt;&lt;a href=&quot;#科学上网工具&quot; class=&quot;headerlink&quot; title=&quot;科学上网工具&quot;&gt;&lt;/a&gt;&lt;del&gt;科学上网工具&lt;/del&gt;&lt;/h3&gt;&lt;h3 id=&quot;如何用hexo搭建自己网站-如何用matery主题&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="待更新" scheme="https://rd-zhang.github.io/categories/%E5%BE%85%E6%9B%B4%E6%96%B0/"/>
+    
     
   </entry>
   
