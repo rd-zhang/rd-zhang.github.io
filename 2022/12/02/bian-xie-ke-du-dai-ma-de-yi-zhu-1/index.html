@@ -386,14 +386,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-12-05
+                    2022-12-06
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    943
+                    1.3k
                 </div>
                 
 
@@ -416,10 +416,10 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>第一次被推荐这本书的时候我已经写了两年代码。尽管自己已经形成了一套命名和注释方法，但是对于代码的可阅读性并没有太过深入的思考。_<a target="_blank" rel="noopener" href="https://mcusoft.files.wordpress.com/2015/04/the-art-of-readable-code.pdf">The Art of Readable Code</a>_ (中文译名<a target="_blank" rel="noopener" href="https://awesome-programming-books.github.io/clean-code/%E7%BC%96%E5%86%99%E5%8F%AF%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E8%89%BA%E6%9C%AF.pdf">《编写可读代码的艺术》</a>)通过15个章节从简到繁，轻松又愉快的使你明白如何写出‘易于理解’的代码。</p>
-<h3 id="第一章——代码应当易于理解"><a href="#第一章——代码应当易于理解" class="headerlink" title="第一章——代码应当易于理解"></a>第一章——代码应当易于理解</h3><p>==代码易于理解==是关键思想。<br>代码的写法应当使别人理解它所需的时间最小化。但是虽然减少代码行数是一个重要目标，我们的最终目标仍然是把理解代码所需时间最小化。<br>编写代码时要经常站在别的角度，想一想自己写的代码别能否轻松理解。</p>
-<h2 id="表明层次的改进"><a href="#表明层次的改进" class="headerlink" title="表明层次的改进"></a>表明层次的改进</h2><p>可读性之旅从“表面层次”的改进开始：选择好的名字、写好的注释以及把代码整洁的写成更好的格式。</p>
-<h3 id="第二章——把信息装进名字里"><a href="#第二章——把信息装进名字里" class="headerlink" title="第二章——把信息装进名字里"></a>第二章——把信息装进名字里</h3><p>选择专业的词语：比如fetchPage相比getPage显得更加专业而清晰；<br>避免泛泛的名字: 如tmp，retval。好的名字应当描述变量的目的或者它承载的值，除非你确定你只是临时的用一次tmp;<br>使用具体的名字更细致的描述：<a target="_blank" rel="noopener" href="https://blog.csdn.net/fuhanghang/article/details/119805459">这里</a>总结了一些常用的命名方法。个人偏爱使用下划线法命名，把每个变量具体干什么使用起英文短语命名，如 <em>log_finishedinfo_when_reach_terminal</em> ;<br>给变量名加上重要细节：比如JS中的 <em>getTime()</em> 返回单位是毫秒，那么就可以给变量加上 _<em>ms</em> 的后缀;<br>名字的长度：应当遵循作用域越大名字越长的原则，比如一个字母 <em>m</em> 如果作用于全域，读者很可能不知道他是干什么的。这就好比旅行，越长的假期你总是会带越多的行李；<br>有目的的使用下划线：你可以在类成员和局部变量后面加上下划线来区分他们。</p>
-<h3 id="第三章——不会误解的名字"><a href="#第三章——不会误解的名字" class="headerlink" title="第三章——不会误解的名字"></a>第三章——不会误解的名字</h3><p><em>Filter()</em> 是一个很好的例子，我的意思是它是一个很糟糕的命名。因为读者根本不知道这个函数是用于 <strong>筛选出</strong> 一部分结果还是 <strong>筛选掉</strong> 一部分结果！<br>而涉及到bool值的时候尽量避免诸如多重否定的文字游戏。比如 <em>is_task_finished</em> 的返回值能够直观的说明任务是否完成了。<br>对于区间的表示，推荐使用一套约定俗成的方法：</p>
+<h3 id="第1章—代码应当易于理解"><a href="#第1章—代码应当易于理解" class="headerlink" title="第1章—代码应当易于理解"></a>第1章—代码应当易于理解</h3><p>==代码易于理解==是关键思想。<br>代码的写法应当使别人理解它所需的时间最小化。但是虽然减少代码行数是一个重要目标，我们的最终目标仍然是把理解代码所需时间最小化。<br>编写代码时要经常站在别的角度，想一想自己写的代码别能否轻松理解。</p>
+<h1 id="Part-1-表明层次的改进"><a href="#Part-1-表明层次的改进" class="headerlink" title="Part 1. 表明层次的改进"></a>Part 1. 表明层次的改进</h1><p>可读性之旅从“表面层次”的改进开始：选择好的名字、写好的注释以及把代码整洁的写成更好的格式。</p>
+<h3 id="第2章—把信息装进名字里"><a href="#第2章—把信息装进名字里" class="headerlink" title="第2章—把信息装进名字里"></a>第2章—把信息装进名字里</h3><p>选择专业的词语：比如fetchPage相比getPage显得更加专业而清晰；<br>避免泛泛的名字: 如tmp，retval。好的名字应当描述变量的目的或者它承载的值，除非你确定你只是临时的用一次tmp;<br>使用具体的名字更细致的描述：<a target="_blank" rel="noopener" href="https://blog.csdn.net/fuhanghang/article/details/119805459">这里</a>总结了一些常用的命名方法。个人偏爱使用下划线法命名，把每个变量具体干什么使用起英文短语命名，如 <em>log_finishedinfo_when_reach_terminal</em> ;<br>给变量名加上重要细节：比如JS中的 <em>getTime()</em> 返回单位是毫秒，那么就可以给变量加上 _<em>ms</em> 的后缀;<br>名字的长度：应当遵循作用域越大名字越长的原则，比如一个字母 <em>m</em> 如果作用于全域，读者很可能不知道他是干什么的。这就好比旅行，越长的假期你总是会带越多的行李；<br>有目的的使用下划线：你可以在类成员和局部变量后面加上下划线来区分他们。</p>
+<h3 id="第3章—不会误解的名字"><a href="#第3章—不会误解的名字" class="headerlink" title="第3章—不会误解的名字"></a>第3章—不会误解的名字</h3><p><em>Filter()</em> 是一个很好的例子，我的意思是它是一个很糟糕的命名。因为读者根本不知道这个函数是用于 <strong>筛选出</strong> 一部分结果还是 <strong>筛选掉</strong> 一部分结果！<br>而涉及到bool值的时候尽量避免诸如多重否定的文字游戏。比如 <em>is_task_finished</em> 的返回值能够直观的说明任务是否完成了。<br>对于区间的表示，推荐使用一套约定俗成的方法：</p>
 <ul>
 <li>min, max 表示极限</li>
 <li>first, last 表示包含的范围(闭区间)</li>
@@ -427,7 +427,7 @@
 <li>etc…</li>
 </ul>
 <p>总之，你应该三思，别人是否会对命名产生不一样的理解。</p>
-<h3 id="第四章——审美"><a href="#第四章——审美" class="headerlink" title="第四章——审美"></a>第四章——审美</h3><p>好的代码应该看上去 <strong>养眼</strong> ，三条原则：</p>
+<h3 id="第4章—审美"><a href="#第4章—审美" class="headerlink" title="第4章—审美"></a>第4章—审美</h3><p>好的代码应该看上去遵循 <strong>养眼</strong> ，三条原则：</p>
 <ul>
 <li>使用一致的布局，让读者很快就能习惯这种风格</li>
 <li>让相似的代码看上去相似</li>
@@ -440,8 +440,37 @@
 <li>在需要的时候使用列对齐；</li>
 <li>选择一个有意义的顺序，比如重要性排序，并保持一致的使用它；</li>
 <li>把声明按照块组织起来，按照逻辑分组，添加注释；</li>
-<li>把代码分成段落，比如按照步骤来分段</li>
-<li>一致的风格比正确的风格重要</li>
+<li>把代码分成段落，比如按照步骤划分；</li>
+<li>个人风格要保证一致性，比如大括号的位置。</li>
+</ul>
+<h3 id="第5章—该写什么样的注释"><a href="#第5章—该写什么样的注释" class="headerlink" title="第5章—该写什么样的注释"></a>第5章—该写什么样的注释</h3><p> 注释的目的是尽量帮助读者了解得和作者一样多：</p>
+<ul>
+<li>不要为那些从代码本身就能快速推断的事实写注释</li>
+<li>不要为了注释而注释</li>
+<li>与其给名字不好的函数写注释，不如把其名字先改好，即 ==好代码 &gt; 坏代码 + 好注释==</li>
+</ul>
+<p> 应该记录下来的想法包括：</p>
+<ul>
+<li>为什么这个地方代码写成这样而不是别的？</li>
+<li>代码中有缺陷的地方，可以写一个 _TODO: XXX_；</li>
+<li>常量为什么定义这个值？ (比如 <em>length = 10 is big enough to describe the object shape</em> )。</li>
+</ul>
+<p>站在读者的立场上思考：</p>
+<ul>
+<li>预料到那些地方会使读者不解或出乎意料，并加上注释；</li>
+<li>在文件/类的级别上使用“全局观”注释，以解释他们是如何一起工作的</li>
+<li>用注释作为代码块的总结。</li>
+</ul>
+<h3 id="第6章—写出言简意赅的注释"><a href="#第6章—写出言简意赅的注释" class="headerlink" title="第6章—写出言简意赅的注释"></a>第6章—写出言简意赅的注释</h3><p> ==注释要有很高的信息率和空间率==</p>
+<ul>
+<li>让注释保持紧凑，能写一行的注释不要写三行；</li>
+<li>避免使用不明确的代词，不要用 <em>it</em> 这种模糊词语；</li>
+<li>润色粗糙的句子(这可能考验语文功底…)；</li>
+<li>精确描述函数的行为；</li>
+<li>用输入输出例子来描述特殊的情况(对于工程师来说这无疑更直观)；</li>
+<li>声明代码的意图；</li>
+<li>使用具名函数。python 等语言能这么调用： <em>connect(timeout = 10, use_encryption = False)</em> ；</li>
+<li>采用信息量高的词语；</li>
 </ul>
 
                 
@@ -735,31 +764,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/12/01/dai-geng-xin/">
+                <a href="/2022/12/02/bian-xie-ke-du-dai-ma-de-yi-zhu-2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="待更新清单">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="《编写可读代码的艺术》(二)">
                         
-                        <span class="card-title">待更新清单</span>
+                        <span class="card-title">《编写可读代码的艺术》(二)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            blog更新计划
+                            “软件开发的一个重要部分是要意识到你的代码以后将如何影响查看这些代码的人。” —— Michael Hunger
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%BE%85%E6%9B%B4%E6%96%B0/" class="post-category">
-                                    待更新
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
                                 </a>
                             
                             
@@ -769,8 +798,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%97%A0/">
-                        <span class="chip bg-color">无</span>
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AF%BB%E4%B9%A6%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">读书分享</span>
                     </a>
                     
                 </div>
@@ -825,7 +858,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.1k</span>&nbsp;字
+                class="white-color">2.1k</span>&nbsp;字
             
             
             
