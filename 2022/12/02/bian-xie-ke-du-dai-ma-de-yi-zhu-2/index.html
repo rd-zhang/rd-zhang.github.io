@@ -393,7 +393,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    199
+                    839
                 </div>
                 
 
@@ -417,7 +417,22 @@
             <div id="articleContent">
                 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>第一次被推荐这本书的时候我已经写了两年代码。尽管自己已经形成了一套命名和注释方法，但是对于代码的可阅读性并没有太过深入的思考。_<a target="_blank" rel="noopener" href="https://mcusoft.files.wordpress.com/2015/04/the-art-of-readable-code.pdf">The Art of Readable Code</a>_ (中文译名<a target="_blank" rel="noopener" href="https://awesome-programming-books.github.io/clean-code/%E7%BC%96%E5%86%99%E5%8F%AF%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E8%89%BA%E6%9C%AF.pdf">《编写可读代码的艺术》</a>)通过15个章节从简到繁，轻松又愉快的使你明白如何写出‘易于理解’的代码。</p>
 <h1 id="Part-2-简化循环和逻辑"><a href="#Part-2-简化循环和逻辑" class="headerlink" title="Part 2. 简化循环和逻辑"></a>Part 2. 简化循环和逻辑</h1><p>这一部分将深入讨论程序的“循环和逻辑”：控制流、逻辑表达式等等。我们将试着最小化代码中的“思维包袱”来达到目的。</p>
-<h3 id="第7章—把控制流变得易读"><a href="#第7章—把控制流变得易读" class="headerlink" title="第7章—把控制流变得易读"></a>第7章—把控制流变得易读</h3><h3 id="第8章—拆分超长的表达式"><a href="#第8章—拆分超长的表达式" class="headerlink" title="第8章—拆分超长的表达式"></a>第8章—拆分超长的表达式</h3><h3 id="第9章—变量与可读性"><a href="#第9章—变量与可读性" class="headerlink" title="第9章—变量与可读性"></a>第9章—变量与可读性</h3>
+<h3 id="第7章—把控制流变得易读"><a href="#第7章—把控制流变得易读" class="headerlink" title="第7章—把控制流变得易读"></a>第7章—把控制流变得易读</h3><p>条件语句中左右两侧分别是“被询问的”和“用来作比较的标准”，比如 <em>if(length &gt; 10)</em> 看起来就很自然；<br><em>if/else</em> 语句处理顺序：正常逻辑优先，简单逻辑优先，可疑或有趣项优先；<br>对于C语言中的三目表达式，更重要的是减少理解其逻辑的时间，因此要注意代码行数与复杂度之间的平衡；<br>避免 <em>do/while</em> 循环，尽量换成 <em>while</em> 或其他循环；<br>可以在函数中提前 <em>return</em> 返回，但要避免使用臭名昭著的 <em>goto</em> ；<br><strong>最小化嵌套</strong> “故意嵌套很深的代码就是一坨屎” ——图图。你可以通过提前返回来减少嵌套。</p>
+<h3 id="第8章—拆分超长的表达式"><a href="#第8章—拆分超长的表达式" class="headerlink" title="第8章—拆分超长的表达式"></a>第8章—拆分超长的表达式</h3><p>如果你百度一下，可能会发现人脑的容量高达7亿TB。但是其实人脑的RAM非常小，以至于大脑同时只能考虑3~4件事。本章的核心思想是—— <strong>把超长的表达式拆分成更容易理解的小块</strong> 。<br>一个简单的例子件事，把某一行代码拆分为两行。第一行多定义一个变量，即“解释变量”，他能够帮助读者理解这个值是干什么的；<br>你也可以使用一个总结性的变量，比如一个bool值，来解释一些拗口的判断式，并利用 <em>if/else</em> 辅助；<br>使用电路学中的“德摩根定理”，它的核心思想是通过整体取反的方式，在不改变逻辑的情况下使判断式更好理解(即前文提到的避免多重否定)；<br>不要滥用短路逻辑；<br>提取出大量重复的表达式为变量，例如C++中的宏(尽管有时并不建议使用宏，但当它对可读性利大于弊时可以采用)。</p>
+<h3 id="第9章—变量与可读性"><a href="#第9章—变量与可读性" class="headerlink" title="第9章—变量与可读性"></a>第9章—变量与可读性</h3><p>对于变量的草率运用会让程序更难理解：</p>
+<ul>
+<li>变量越多，越难以跟踪他们的动向；</li>
+<li>变量的作用域越大，就需要跟踪它的动向越久；</li>
+<li>变量改变地越频繁，就越难以跟踪它的当前值。</li>
+</ul>
+<p>如何处理：</p>
+<ul>
+<li>减少无价值的临时变量，比如根本就没有必要定义 <em>now = datetime.datetime.now()</em> ，直接使用这个时间函数即可；</li>
+<li>减少控制流变量，避免使用 <em>done</em> 这样的“控制流变量”；</li>
+<li>缩小变量作用域，防止名称污染，让你的变量对尽量少的代码行可见；</li>
+<li>只写一次的变量更好，因为常量往往不会引来麻烦。</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -807,7 +822,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.1k</span>&nbsp;字
+                class="white-color">2.7k</span>&nbsp;字
             
             
             
