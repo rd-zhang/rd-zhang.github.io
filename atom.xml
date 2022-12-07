@@ -6,7 +6,7 @@
   <link href="https://rd-zhang.github.io/atom.xml" rel="self"/>
   
   <link href="https://rd-zhang.github.io/"/>
-  <updated>2022-12-05T06:05:15.089Z</updated>
+  <updated>2022-12-07T09:15:11.208Z</updated>
   <id>https://rd-zhang.github.io/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux实用工具</title>
+    <link href="https://rd-zhang.github.io/2022/12/07/linux-shi-yong-gong-ju/"/>
+    <id>https://rd-zhang.github.io/2022/12/07/linux-shi-yong-gong-ju/</id>
+    <published>2022-12-06T16:00:00.000Z</published>
+    <updated>2022-12-07T09:15:11.208Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;截图工具&quot;&gt;&lt;a href=&quot;#截图工具&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="分享" scheme="https://rd-zhang.github.io/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="分享" scheme="https://rd-zhang.github.io/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有价值的网站</title>
+    <link href="https://rd-zhang.github.io/2022/12/07/you-jie-zhi-de-wang-zhan/"/>
+    <id>https://rd-zhang.github.io/2022/12/07/you-jie-zhi-de-wang-zhan/</id>
+    <published>2022-12-06T16:00:00.000Z</published>
+    <updated>2022-12-07T09:09:21.941Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本文分为两部分，前半部分主要涉及计算机编程，后半部分涉及机器人学。无论你是想转码的小白，初学的开发者，还是机器人工程师，希望这篇文章都能给你带来新的知识。&lt;/p&gt;
+&lt;h2 id=&quot;一些CS网站分享&quot;&gt;&lt;a href=&quot;#一些CS网站分享&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="分享" scheme="https://rd-zhang.github.io/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="分享" scheme="https://rd-zhang.github.io/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>如何使用hexo和github免费打造属于自己的博客(网站)</title>
@@ -172,14 +223,14 @@
     <link href="https://rd-zhang.github.io/2022/12/01/dai-geng-xin/"/>
     <id>https://rd-zhang.github.io/2022/12/01/dai-geng-xin/</id>
     <published>2022-11-30T16:00:00.000Z</published>
-    <updated>2022-12-07T02:10:35.829Z</updated>
+    <updated>2022-12-07T09:15:58.706Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;科学上网工具&quot;&gt;&lt;a href=&quot;#科学上网工具&quot; class=&quot;headerlink&quot; title=&quot;科学上网工具&quot;&gt;&lt;/a&gt;&lt;del&gt;科学上网工具&lt;/del&gt;&lt;/h3&gt;&lt;h3 id=&quot;如何用hexo搭建自己网站-如何用matery主题&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;c-学习查漏补缺&quot;&gt;&lt;a href=&quot;#c-学习查漏补缺&quot; class=&quot;headerlink&quot; title=&quot;c++学习查漏补缺&quot;&gt;&lt;/a&gt;c++学习查漏补缺&lt;/h3&gt;&lt;h3 id=&quot;c-库函数过一遍&quot;&gt;&lt;a href=&quot;#c-库函数过一遍&quot;</summary>
         
       
     

@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Linux实用工具</title>
+      <link href="/2022/12/07/linux-shi-yong-gong-ju/"/>
+      <url>/2022/12/07/linux-shi-yong-gong-ju/</url>
+      
+        <content type="html"><![CDATA[<h3 id="截图工具"><a href="#截图工具" class="headerlink" title="截图工具"></a>截图工具</h3><p>最好用的当属Kazan和Shutter，前者不仅能截屏还能录屏；后者截屏功能相对更加强大。<br>命令行apt安装即可。</p><h3 id="办公软件"><a href="#办公软件" class="headerlink" title="办公软件"></a>办公软件</h3><p>WPS，支持国产</p><h3 id="远程控制"><a href="#远程控制" class="headerlink" title="远程控制"></a>远程控制</h3><p>用过Google chrome desktop, Teamviewer等一大堆软件，现在表示还是向日(Sunlogin)最好用…</p><h3 id="c-编译软件"><a href="#c-编译软件" class="headerlink" title="c++编译软件"></a>c++编译软件</h3><p>有很多，推荐一款常用的 Bazel</p><h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><p>用来用去，最好的还是VSCode</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>有价值的网站</title>
+      <link href="/2022/12/07/you-jie-zhi-de-wang-zhan/"/>
+      <url>/2022/12/07/you-jie-zhi-de-wang-zhan/</url>
+      
+        <content type="html"><![CDATA[<p>本文分为两部分，前半部分主要涉及计算机编程，后半部分涉及机器人学。无论你是想转码的小白，初学的开发者，还是机器人工程师，希望这篇文章都能给你带来新的知识。</p><h2 id="一些CS网站分享"><a href="#一些CS网站分享" class="headerlink" title="一些CS网站分享"></a>一些CS网站分享</h2><h3 id="Google开源项目风格指南-中文版"><a href="#Google开源项目风格指南-中文版" class="headerlink" title="Google开源项目风格指南 (中文版)"></a><a href="https://zh-google-styleguide.readthedocs.io/en/latest/contents/">Google开源项目风格指南</a> (中文版)</h3><p>养成一套良好的代码编写习惯非常重要，无论是对于开发者还是阅读者 <span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="一些机器人学网站分享"><a href="#一些机器人学网站分享" class="headerlink" title="一些机器人学网站分享"></a>一些机器人学网站分享</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何使用hexo和github免费打造属于自己的博客(网站)</title>
       <link href="/2022/12/05/hexo-zhi-zuo-ge-ren-wang-ye/"/>
       <url>/2022/12/05/hexo-zhi-zuo-ge-ren-wang-ye/</url>
@@ -166,7 +216,7 @@
       <link href="/2022/12/01/dai-geng-xin/"/>
       <url>/2022/12/01/dai-geng-xin/</url>
       
-        <content type="html"><![CDATA[<h3 id="科学上网工具"><a href="#科学上网工具" class="headerlink" title="科学上网工具"></a><del>科学上网工具</del></h3><h3 id="如何用hexo搭建自己网站-如何用matery主题"><a href="#如何用hexo搭建自己网站-如何用matery主题" class="headerlink" title="如何用hexo搭建自己网站+如何用matery主题"></a><del>如何用hexo搭建自己网站+如何用matery主题</del></h3><h3 id="Linux实用小工具推荐"><a href="#Linux实用小工具推荐" class="headerlink" title="Linux实用小工具推荐"></a>Linux实用小工具推荐</h3><h3 id="有价值的网站收藏"><a href="#有价值的网站收藏" class="headerlink" title="有价值的网站收藏"></a>有价值的网站收藏</h3><h3 id="c-学习系列"><a href="#c-学习系列" class="headerlink" title="c++学习系列"></a>c++学习系列</h3><h3 id="c-库函数"><a href="#c-库函数" class="headerlink" title="c++库函数"></a>c++库函数</h3><h3 id="数据结构和算法学习系列"><a href="#数据结构和算法学习系列" class="headerlink" title="数据结构和算法学习系列"></a>数据结构和算法学习系列</h3><h3 id="一些有趣的开源项目分享"><a href="#一些有趣的开源项目分享" class="headerlink" title="一些有趣的开源项目分享"></a>一些有趣的开源项目分享</h3><h3 id="生活随笔、杂谈系列"><a href="#生活随笔、杂谈系列" class="headerlink" title="生活随笔、杂谈系列"></a>生活随笔、杂谈系列</h3><h3 id="娱乐系列，音乐、影视推荐"><a href="#娱乐系列，音乐、影视推荐" class="headerlink" title="娱乐系列，音乐、影视推荐"></a>娱乐系列，音乐、影视推荐</h3>]]></content>
+        <content type="html"><![CDATA[<h3 id="c-学习查漏补缺"><a href="#c-学习查漏补缺" class="headerlink" title="c++学习查漏补缺"></a>c++学习查漏补缺</h3><h3 id="c-库函数过一遍"><a href="#c-库函数过一遍" class="headerlink" title="c++库函数过一遍"></a>c++库函数过一遍</h3><h3 id="数据结构和算法学习系列"><a href="#数据结构和算法学习系列" class="headerlink" title="数据结构和算法学习系列"></a>数据结构和算法学习系列</h3><h3 id="一些有趣的开源项目分享"><a href="#一些有趣的开源项目分享" class="headerlink" title="一些有趣的开源项目分享"></a>一些有趣的开源项目分享</h3><h3 id="生活随笔、杂谈系列"><a href="#生活随笔、杂谈系列" class="headerlink" title="生活随笔、杂谈系列"></a>生活随笔、杂谈系列</h3>]]></content>
       
       
       <categories>
