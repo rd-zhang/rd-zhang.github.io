@@ -386,14 +386,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-12-06
+                    2022-12-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    180
+                    563
                 </div>
                 
 
@@ -417,7 +417,34 @@
             <div id="articleContent">
                 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>第一次被推荐这本书的时候我已经写了两年代码。尽管自己已经形成了一套命名和注释方法，但是对于代码的可阅读性并没有太过深入的思考。_<a target="_blank" rel="noopener" href="https://mcusoft.files.wordpress.com/2015/04/the-art-of-readable-code.pdf">The Art of Readable Code</a>_ (中文译名<a target="_blank" rel="noopener" href="https://awesome-programming-books.github.io/clean-code/%E7%BC%96%E5%86%99%E5%8F%AF%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E8%89%BA%E6%9C%AF.pdf">《编写可读代码的艺术》</a>)通过15个章节从简到繁，轻松又愉快的使你明白如何写出‘易于理解’的代码。</p>
 <h1 id="Part-3-重新组织代码"><a href="#Part-3-重新组织代码" class="headerlink" title="Part 3. 重新组织代码"></a>Part 3. 重新组织代码</h1><p>该部分会讨论可以在函数级别对代码做更大的改动。</p>
-<h3 id="第10章—抽取不相关的子问题"><a href="#第10章—抽取不相关的子问题" class="headerlink" title="第10章—抽取不相关的子问题"></a>第10章—抽取不相关的子问题</h3><h3 id="第11章—一次只做一件事"><a href="#第11章—一次只做一件事" class="headerlink" title="第11章—一次只做一件事"></a>第11章—一次只做一件事</h3><h3 id="第12章—把想法变成代码"><a href="#第12章—把想法变成代码" class="headerlink" title="第12章—把想法变成代码"></a>第12章—把想法变成代码</h3><h3 id="第13章—少写代码"><a href="#第13章—少写代码" class="headerlink" title="第13章—少写代码"></a>第13章—少写代码</h3>
+<h3 id="第10章—抽取不相关的子问题"><a href="#第10章—抽取不相关的子问题" class="headerlink" title="第10章—抽取不相关的子问题"></a>第10章—抽取不相关的子问题</h3><p><strong>积极地发现并抽取出不相关的子逻辑</strong></p>
+<ul>
+<li>如果足够多行数的代码并不是在解决当前问题，那么把他们放到独立的函数中去；</li>
+<li>你可以自己写一些工具性的代码来填充编程语言中的空白，比如C++中没有简单的方法来读取整个文件，你可以自己写一个 <em>ReadFileToString()</em> 并当做库函数使用；</li>
+<li>创建大量通用代码，这样你代码的其余部分会更小而且容易思考；</li>
+<li>简化已有接口，按需重塑接口；</li>
+<li>最后要记住，避免 <strong>过犹不及</strong> ！</li>
+</ul>
+<h3 id="第11章—一次只做一件事"><a href="#第11章—一次只做一件事" class="headerlink" title="第11章—一次只做一件事"></a>第11章—一次只做一件事</h3><p>把代码组织得一次只做一件事：</p>
+<ul>
+<li>列出代码所做的所有任务，其中一些可以变成独立的函数/类；</li>
+<li>尽力把这些任务拆分到不同的函数中。</li>
+</ul>
+<h3 id="第12章—把想法变成代码"><a href="#第12章—把想法变成代码" class="headerlink" title="第12章—把想法变成代码"></a>第12章—把想法变成代码</h3><p>用自然语言描述程序来帮助写出更自然的代码:</p>
+<ul>
+<li>清楚地描述逻辑；</li>
+<li>了解所使用的编程语言的库函数，比如一些提示框内的建议很有帮助；</li>
+<li>首先把本方法用于小块代码，然后应用于更大的问题。</li>
+</ul>
+<h3 id="第13章—少写代码"><a href="#第13章—少写代码" class="headerlink" title="第13章—少写代码"></a>第13章—少写代码</h3><p><strong>最好读的代码就是没有代码</strong></p>
+<ul>
+<li>别费劲去做你不太需要的功能；</li>
+<li>质疑并拆分你的需求；</li>
+<li>记得思考你的输入和输出是什么，并不是任何时候输入都是很复杂的；</li>
+<li>让你的代码库越小、越轻量级越好；</li>
+<li>熟悉你周边的库，避免重复造轮子。</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -807,7 +834,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.7k</span>&nbsp;字
+                class="white-color">3.1k</span>&nbsp;字
             
             
             
