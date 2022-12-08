@@ -375,7 +375,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-12-01
+                    2022-12-08
                 </div>
                 
 
@@ -389,7 +389,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    394
                 </div>
                 
 
@@ -411,7 +411,22 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id=""><a href="#" class="headerlink" title=""></a></h3>
+                <h3 id="分号"><a href="#分号" class="headerlink" title="分号"></a>分号</h3><p>如果你先学习了c++，记得不要在行尾加分号，也不要用分号将两条命令放在同一行</p>
+<h3 id="行长度"><a href="#行长度" class="headerlink" title="行长度"></a>行长度</h3><p>每行不超过80个字符。<br>但是：url/路径等不要分割</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Yes: foo_bar(self, width, height, color=<span class="string">'black'</span>, design=<span class="literal">None</span>, x=<span class="string">'foo'</span>,</span><br><span class="line">             emphasis=<span class="literal">None</span>, highlight=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">     <span class="keyword">if</span> (width == <span class="number">0</span> <span class="keyword">and</span> height == <span class="number">0</span> <span class="keyword">and</span></span><br><span class="line">         color == <span class="string">'red'</span> <span class="keyword">and</span> emphasis == <span class="string">'strong'</span>):</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Yes:  <span class="comment"># See details at</span></span><br><span class="line">      <span class="comment"># http://www.example.com/us/developer/documentation/api/content/v2.0/csv_file_name_extension_full_specification.html</span></span><br><span class="line"></span><br><span class="line">No:  <span class="comment"># See details at</span></span><br><span class="line">     <span class="comment"># http://www.example.com/us/developer/documentation/api/content/\</span></span><br><span class="line">     <span class="comment"># v2.0/csv_file_name_extension_full_specification.html</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h3><p><strong>宁缺毋滥</strong></p>
+<h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><p><strong>用4个空格来缩进代码</strong><br>绝对不要用tab, 也不要tab和空格混用. 建议使用4空格的悬挂式缩进</p>
+<h3 id="序列元素尾部逗号"><a href="#序列元素尾部逗号" class="headerlink" title="序列元素尾部逗号"></a>序列元素尾部逗号</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Yes:   golomb3 = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">3</span>]</span><br><span class="line">Yes:   golomb4 = [</span><br><span class="line">           <span class="number">0</span>,</span><br><span class="line">           <span class="number">1</span>,</span><br><span class="line">           <span class="number">4</span>,</span><br><span class="line">           <span class="number">6</span>,</span><br><span class="line">       ]</span><br><span class="line"></span><br><span class="line">No:    golomb4 = [</span><br><span class="line">           <span class="number">0</span>,</span><br><span class="line">           <span class="number">1</span>,</span><br><span class="line">           <span class="number">4</span>,</span><br><span class="line">           <span class="number">6</span></span><br><span class="line">       ]</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h3><p>顶级定义之间空两行, 比如函数或者类定义. 方法定义, 类定义与第一个方法之间, 都应该空一行. 函数或方法中, 某些地方要是你觉得合适, 就空一行.</p>
+<h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><p><strong>括号内不要有空格</strong><br><strong>不要在逗号, 分号, 冒号前面加空格, 但应该在它们后面加(除了在行尾)</strong><br><strong>参数列表, 索引或切片的左括号前不应加空格</strong><br>……</p>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>参考《编写可读代码的艺术》</p>
+<h3 id="标点符号-拼写和语法"><a href="#标点符号-拼写和语法" class="headerlink" title="标点符号,拼写和语法"></a>标点符号,拼写和语法</h3><p>注意标点符号,拼写和语法</p>
+<p>注释应有适当的大写和标点,句子应该尽量完整.对于诸如在行尾上的较短注释,可以不那么正式,但是也应该尽量保持风格一致</p>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3><h3 id="-2"><a href="#-2" class="headerlink" title=""></a></h3><h3 id="-3"><a href="#-3" class="headerlink" title=""></a></h3><h3 id="-4"><a href="#-4" class="headerlink" title=""></a></h3><h3 id="-5"><a href="#-5" class="headerlink" title=""></a></h3>
                 
             </div>
             <hr/>
@@ -437,7 +452,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://rd-zhang.github.io/2022/12/01/google-feng-ge-zhi-nan/">https://rd-zhang.github.io/2022/12/01/google-feng-ge-zhi-nan/</a>
+                    <a href="https://rd-zhang.github.io/2022/12/08/python-feng-ge-gui-fan/">https://rd-zhang.github.io/2022/12/08/python-feng-ge-gui-fan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -650,31 +665,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/12/02/bian-xie-ke-du-dai-ma-de-yi-zhu-4/">
+                <a href="/2022/12/08/python-yu-yan-gui-fan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="《编写可读代码的艺术》(四|实战)(完)">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Google开源项目风格指南——Python语言规范">
                         
-                        <span class="card-title">《编写可读代码的艺术》(四|实战)(完)</span>
+                        <span class="card-title">Google开源项目风格指南——Python语言规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            “软件开发的一个重要部分是要意识到你的代码以后将如何影响查看这些代码的人。” —— Michael Hunger
+                            Python 是 Google主要的脚本语言。这本风格指南主要包含的是针对python的编程准则。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-02
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-08
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
                                 </a>
                             
                             
@@ -684,12 +699,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%AF%BB%E4%B9%A6%E5%88%86%E4%BA%AB/">
-                        <span class="chip bg-color">读书分享</span>
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
                 </div>
@@ -703,31 +714,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/12/01/dai-geng-xin/">
+                <a href="/2022/12/07/linux-shi-yong-gong-ju/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="待更新清单">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Linux实用工具">
                         
-                        <span class="card-title">待更新清单</span>
+                        <span class="card-title">Linux实用工具</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            blog更新计划
+                            一些能够提高工作效率的工具
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%BE%85%E6%9B%B4%E6%96%B0/" class="post-category">
-                                    待更新
+                            <a href="/categories/%E5%88%86%E4%BA%AB/" class="post-category">
+                                    分享
                                 </a>
                             
                             
@@ -737,8 +748,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%97%A0/">
-                        <span class="chip bg-color">无</span>
+                    <a href="/tags/%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">分享</span>
                     </a>
                     
                 </div>
@@ -793,7 +804,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.4k</span>&nbsp;字
+                class="white-color">4.3k</span>&nbsp;字
             
             
             

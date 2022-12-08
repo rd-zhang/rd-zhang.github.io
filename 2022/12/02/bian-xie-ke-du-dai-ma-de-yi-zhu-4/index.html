@@ -386,14 +386,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-12-07
+                    2022-12-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    228
+                    734
                 </div>
                 
 
@@ -417,8 +417,22 @@
             <div id="articleContent">
                 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>第一次被推荐这本书的时候我已经写了两年代码。尽管自己已经形成了一套命名和注释方法，但是对于代码的可阅读性并没有太过深入的思考。_<a target="_blank" rel="noopener" href="https://mcusoft.files.wordpress.com/2015/04/the-art-of-readable-code.pdf">The Art of Readable Code</a>_ (中文译名<a target="_blank" rel="noopener" href="https://awesome-programming-books.github.io/clean-code/%E7%BC%96%E5%86%99%E5%8F%AF%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E8%89%BA%E6%9C%AF.pdf">《编写可读代码的艺术》</a>)通过15个章节从简到繁，轻松又愉快的使你明白如何写出‘易于理解’的代码。</p>
 <h1 id="Part-4-精选话题"><a href="#Part-4-精选话题" class="headerlink" title="Part 4. 精选话题"></a>Part 4. 精选话题</h1><p>在本书的最后一部分，之前讨论的各种技巧会应用到两个精选的话题中。</p>
-<h3 id="第14章—测试与可读性"><a href="#第14章—测试与可读性" class="headerlink" title="第14章—测试与可读性"></a>第14章—测试与可读性</h3><p><strong>测试应当具有可读性，以便使其他程序员可以舒服的改变或者增加测试</strong><br>记住对使用者隐去不重要的细节，以便更重要的细节会更为突出；</p>
-<h3 id="第15章—设计并改进“分钟-x2F-小时计数器”"><a href="#第15章—设计并改进“分钟-x2F-小时计数器”" class="headerlink" title="第15章—设计并改进“分钟/小时计数器”"></a>第15章—设计并改进“分钟/小时计数器”</h3>
+<h3 id="第14章—测试与可读性"><a href="#第14章—测试与可读性" class="headerlink" title="第14章—测试与可读性"></a>第14章—测试与可读性</h3><p><strong>测试应当具有可读性，以便使其他程序员可以舒服的改变或者增加测试</strong><br>记住对使用者隐去不重要的细节，以便更重要的细节会更为突出；<br>大多数的测试都能精炼成“对于xx的输入/情况，期望有xx的输出/行为”；<br><strong>让错误消息具有可读性</strong><br>多用 <em>assert()</em>;<br>手工打造错误消息，选择好的测试输入，又简单又能完成工作的测试值更好；<br>与其建立单个“完美”输入来完整地执行代码，不如写多个小测试，因为他们更具有可读性；<br>为测试函数命名，但是避免“test”这种没什么意义的名字；</p>
+<p>下面我们来看一个例子，在这段代码中</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">Test1</span><span class="params">()</span></span>{</span><br><span class="line">  vector&lt;ScoredDocument&gt; docs;</span><br><span class="line">  docs.<span class="built_in">resize</span>(<span class="number">5</span>);</span><br><span class="line">  docs[<span class="number">0</span>].url = <span class="string">"http://example.com"</span></span><br><span class="line">  docs[<span class="number">0</span>].score = <span class="number">-5.0</span>;</span><br><span class="line">  docs[<span class="number">1</span>].url = <span class="string">"http://example.com"</span></span><br><span class="line">  docs[<span class="number">1</span>].score = <span class="number">1</span>;</span><br><span class="line">  docs[<span class="number">2</span>].url = <span class="string">"http://example.com"</span></span><br><span class="line">  docs[<span class="number">2</span>].score = <span class="number">4</span>;</span><br><span class="line">  docs[<span class="number">3</span>].url = <span class="string">"http://example.com"</span></span><br><span class="line">  docs[<span class="number">3</span>].score = <span class="number">-99998.7</span>;</span><br><span class="line">  docs[<span class="number">4</span>].url = <span class="string">"http://example.com"</span></span><br><span class="line">  docs[<span class="number">4</span>].score = <span class="number">3.0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">SortAndFileterDocs</span>(&amp;Docs);</span><br><span class="line"></span><br><span class="line">  <span class="built_in">assert</span>(docs.<span class="built_in">size</span>() == <span class="number">3</span>);</span><br><span class="line">  <span class="built_in">assert</span>(docs[<span class="number">0</span>].score == <span class="number">4</span>);</span><br><span class="line">  <span class="built_in">assert</span>(docs[<span class="number">1</span>].score == <span class="number">3.0</span>);</span><br><span class="line">  <span class="built_in">assert</span>(docs[<span class="number">2</span>].score == <span class="number">1</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>这段测试代码至少犯了8条错误：</p>
+<ul>
+<li>测试太长，充满不重要的细节</li>
+<li>增加新测试将很不容易</li>
+<li>测试失败的消息不是很有帮助。如果测试失败，它仅仅是“Assertion failed:docs.size() == 3”，对于调试没有什么帮助</li>
+<li>这段测试代码想同时测完所有东西。拆分为多个测试会更具可读性</li>
+<li>测试的输入不是很简单，尤其是“-99998.7”这种夸张的数值</li>
+<li>它没有其他测试其他极端输入，比如空输入向量，很长的向量等</li>
+<li>函数名字没有什么实意</li>
+</ul>
+<p>存在一种对测试较好的开发方式，即大名鼎鼎的测试驱动开发(TDD)。其支持者相信这种流程对没有测试的代码来将会做出极大的质量改进。无论你选择那种驱动开发方式，至少通过在写代码时候想着测试这件事能够帮助我们把代码写的更好。</p>
+<h3 id="第15章—设计并改进“分钟-x2F-小时计数器”"><a href="#第15章—设计并改进“分钟-x2F-小时计数器”" class="headerlink" title="第15章—设计并改进“分钟/小时计数器”"></a>第15章—设计并改进“分钟/小时计数器”</h3><p>见 <a target="_blank" rel="noopener" href="https://awesome-programming-books.github.io/clean-code/%E7%BC%96%E5%86%99%E5%8F%AF%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E8%89%BA%E6%9C%AF.pdf">编写可读代码的艺术</a> 第十五章</p>
+
                 
             </div>
             <hr/>
@@ -714,19 +728,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/12/01/google-feng-ge-zhi-nan/">
+                <a href="/2022/12/01/dai-geng-xin/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Google开源项目风格指南——Python风格规范">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="待更新清单">
                         
-                        <span class="card-title">Google开源项目风格指南——Python风格规范</span>
+                        <span class="card-title">待更新清单</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Python 是 Google主要的脚本语言。这本风格指南主要包含的是针对python的编程准则。
+                            blog更新计划
                         
                     </div>
                     <div class="publish-info">
@@ -735,23 +749,11 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            图图
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -804,7 +806,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.4k</span>&nbsp;字
+                class="white-color">4.3k</span>&nbsp;字
             
             
             
