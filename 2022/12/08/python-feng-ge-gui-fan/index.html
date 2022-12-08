@@ -389,7 +389,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    394
+                    1k
                 </div>
                 
 
@@ -411,7 +411,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="分号"><a href="#分号" class="headerlink" title="分号"></a>分号</h3><p>如果你先学习了c++，记得不要在行尾加分号，也不要用分号将两条命令放在同一行</p>
+                <p><a target="_blank" rel="noopener" href="https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents/">Python风格指南(中文版)</a></p>
+<h3 id="分号"><a href="#分号" class="headerlink" title="分号"></a>分号</h3><p>如果你先学习了c++，记得不要在行尾加分号，也不要用分号将两条命令放在同一行</p>
 <h3 id="行长度"><a href="#行长度" class="headerlink" title="行长度"></a>行长度</h3><p>每行不超过80个字符。<br>但是：url/路径等不要分割</p>
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Yes: foo_bar(self, width, height, color=<span class="string">'black'</span>, design=<span class="literal">None</span>, x=<span class="string">'foo'</span>,</span><br><span class="line">             emphasis=<span class="literal">None</span>, highlight=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">     <span class="keyword">if</span> (width == <span class="number">0</span> <span class="keyword">and</span> height == <span class="number">0</span> <span class="keyword">and</span></span><br><span class="line">         color == <span class="string">'red'</span> <span class="keyword">and</span> emphasis == <span class="string">'strong'</span>):</span><br></pre></td></tr></tbody></table></figure>
 
@@ -422,11 +423,32 @@
 <h3 id="序列元素尾部逗号"><a href="#序列元素尾部逗号" class="headerlink" title="序列元素尾部逗号"></a>序列元素尾部逗号</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Yes:   golomb3 = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">3</span>]</span><br><span class="line">Yes:   golomb4 = [</span><br><span class="line">           <span class="number">0</span>,</span><br><span class="line">           <span class="number">1</span>,</span><br><span class="line">           <span class="number">4</span>,</span><br><span class="line">           <span class="number">6</span>,</span><br><span class="line">       ]</span><br><span class="line"></span><br><span class="line">No:    golomb4 = [</span><br><span class="line">           <span class="number">0</span>,</span><br><span class="line">           <span class="number">1</span>,</span><br><span class="line">           <span class="number">4</span>,</span><br><span class="line">           <span class="number">6</span></span><br><span class="line">       ]</span><br></pre></td></tr></tbody></table></figure>
 
 <h3 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h3><p>顶级定义之间空两行, 比如函数或者类定义. 方法定义, 类定义与第一个方法之间, 都应该空一行. 函数或方法中, 某些地方要是你觉得合适, 就空一行.</p>
-<h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><p><strong>括号内不要有空格</strong><br><strong>不要在逗号, 分号, 冒号前面加空格, 但应该在它们后面加(除了在行尾)</strong><br><strong>参数列表, 索引或切片的左括号前不应加空格</strong><br>……</p>
+<h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><p>括号内不要有空格<br>不要在逗号, 分号, 冒号前面加空格, 但应该在它们后面加(除了在行尾)<br>参数列表, 索引或切片的左括号前不应加空格<br>……</p>
 <h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>参考《编写可读代码的艺术》</p>
 <h3 id="标点符号-拼写和语法"><a href="#标点符号-拼写和语法" class="headerlink" title="标点符号,拼写和语法"></a>标点符号,拼写和语法</h3><p>注意标点符号,拼写和语法</p>
 <p>注释应有适当的大写和标点,句子应该尽量完整.对于诸如在行尾上的较短注释,可以不那么正式,但是也应该尽量保持风格一致</p>
-<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3><h3 id="-2"><a href="#-2" class="headerlink" title=""></a></h3><h3 id="-3"><a href="#-3" class="headerlink" title=""></a></h3><h3 id="-4"><a href="#-4" class="headerlink" title=""></a></h3><h3 id="-5"><a href="#-5" class="headerlink" title=""></a></h3>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><p>如果一个类不继承自其它类, 就显式的从object继承. 嵌套类也一样.(除非是为了和 python2 兼容)</p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>避免在循环中用+和+=操作符来累加字符串. 由于字符串是不可变的, 这样做会创建不必要的临时对象, 并且导致二次方而不是线性的运行时间. 作为替代方案, 你可以将每个子串加入列表, 然后在循环结束后用 <code>.join</code> 连接列表. (也可以将每个子串写入一个 <code>cStringIO.StringIO</code> 缓存中.)</p>
+<p>为多行字符串使用三重双引号”””而非三重单引号’’’. </p>
+<h3 id="文件和sockets"><a href="#文件和sockets" class="headerlink" title="文件和sockets"></a>文件和sockets</h3><p><strong>在文件和sockets结束时, 显式的关闭它</strong></p>
+<h3 id="TODO注释"><a href="#TODO注释" class="headerlink" title="TODO注释"></a>TODO注释</h3><p>为临时代码使用TODO注释, 它是一种短期解决方案. 不算完美, 但够好了.</p>
+<h3 id="导入格式"><a href="#导入格式" class="headerlink" title="导入格式"></a>导入格式</h3><p>每个导入应该独占一行, <code>typing</code> 的导入除外</p>
+<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><p>通常每个语句应该独占一行</p>
+<p>不过, 如果测试结果与测试语句在一行放得下, 你也可以将它们放在同一行. 如果是if语句, 只有在没有else时才能这样做</p>
+<h3 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h3><p>模块名写法: module_name ;<br>包名写法: package_name ;<br>类名: ClassName ;<br>方法名: method_name ;<br>异常名: ExceptionName ;<br>函数名: function_name ;<br>全局常量名: GLOBAL_CONSTANT_NAME ;<br>全局变量名: global_var_name ;<br>实例名: instance_var_name ;<br>函数参数名: function_parameter_name ;<br>局部变量名: local_var_name</p>
+<p>函数名,变量名和文件名应该是描述性的,尽量避免缩写,特别要避免使用非项目人员不清楚难以理解的缩写,不要通过删除单词中的字母来进行缩写. 始终使用 .py 作为文件后缀名,不要用破折号.</p>
+<p>应该避免的名称</p>
+<ul>
+<li>单字符名称, 除了计数器和迭代器,作为 try/except 中异常声明的 e,作为 with 语句中文件句柄的 f.</li>
+<li>包/模块名中的连字符(-)</li>
+<li>双下划线开头并结尾的名称(Python保留, 例如__init__)</li>
+</ul>
+<h3 id="Main"><a href="#Main" class="headerlink" title="Main"></a>Main</h3><p>即使是一个打算被用作脚本的文件, 也应该是可导入的. 并且简单的导入不应该导致这个脚本的主功能(main functionality)被执行, 这是一种副作用. 主功能应该放在一个main()函数中.</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="函数长度"><a href="#函数长度" class="headerlink" title="函数长度"></a>函数长度</h3><p>推荐函数功能尽量集中,简单,小巧</p>
+<p>不对函数长度做硬性限制.但是若一个函数超过来40行,推荐考虑一下是否可以在不损害程序结构的情况下对其进行分解. </p>
+
                 
             </div>
             <hr/>
@@ -661,17 +683,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/12/08/python-yu-yan-gui-fan/">
+                <a href="/2022/12/08/python-feng-ge-gui-fan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Google开源项目风格指南——Python语言规范">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Google开源项目风格指南——Python风格规范">
                         
-                        <span class="card-title">Google开源项目风格指南——Python语言规范</span>
+                        <span class="card-title">Google开源项目风格指南——Python风格规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -681,9 +704,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -696,6 +719,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -804,7 +828,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.3k</span>&nbsp;字
+                class="white-color">4.9k</span>&nbsp;字
             
             
             

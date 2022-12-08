@@ -6,7 +6,7 @@
   <link href="https://rd-zhang.github.io/atom.xml" rel="self"/>
   
   <link href="https://rd-zhang.github.io/"/>
-  <updated>2022-12-08T06:36:48.836Z</updated>
+  <updated>2022-12-08T07:37:17.875Z</updated>
   <id>https://rd-zhang.github.io/</id>
   
   <author>
@@ -17,44 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Google开源项目风格指南——Python语言规范</title>
-    <link href="https://rd-zhang.github.io/2022/12/08/python-yu-yan-gui-fan/"/>
-    <id>https://rd-zhang.github.io/2022/12/08/python-yu-yan-gui-fan/</id>
-    <published>2022-12-07T16:00:00.000Z</published>
-    <updated>2022-12-08T06:36:48.836Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://rd-zhang.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://rd-zhang.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Google开源项目风格指南——Python风格规范</title>
     <link href="https://rd-zhang.github.io/2022/12/08/python-feng-ge-gui-fan/"/>
     <id>https://rd-zhang.github.io/2022/12/08/python-feng-ge-gui-fan/</id>
     <published>2022-12-07T16:00:00.000Z</published>
-    <updated>2022-12-08T06:49:16.054Z</updated>
+    <updated>2022-12-08T07:37:17.875Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;分号&quot;&gt;&lt;a href=&quot;#分号&quot; class=&quot;headerlink&quot; title=&quot;分号&quot;&gt;&lt;/a&gt;分号&lt;/h3&gt;&lt;p&gt;如果你先学习了c++，记得不要在行尾加分号，也不要用分号将两条命令放在同一行&lt;/p&gt;
-&lt;h3 id=&quot;行长度&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents/&quot;&gt;Python风格指南(中文版)&lt;/a&gt;&lt;/p&gt;
+&lt;h3</summary>
         
       
     
