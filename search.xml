@@ -8,7 +8,7 @@
       <link href="/2022/12/07/linux-shi-yong-gong-ju/"/>
       <url>/2022/12/07/linux-shi-yong-gong-ju/</url>
       
-        <content type="html"><![CDATA[<h3 id="截图工具"><a href="#截图工具" class="headerlink" title="截图工具"></a>截图工具</h3><p>最好用的当属Kazan和Shutter，前者不仅能截屏还能录屏；后者截屏功能相对更加强大。<br>命令行apt安装即可。</p><h3 id="办公软件"><a href="#办公软件" class="headerlink" title="办公软件"></a>办公软件</h3><p>WPS，支持国产</p><h3 id="远程控制"><a href="#远程控制" class="headerlink" title="远程控制"></a>远程控制</h3><p>用过Google chrome desktop, Teamviewer等一大堆软件，现在表示还是向日(Sunlogin)最好用…</p><h3 id="c-编译软件"><a href="#c-编译软件" class="headerlink" title="c++编译软件"></a>c++编译软件</h3><p>有很多，推荐一款常用的 Bazel</p><h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><p>用来用去，最好的还是VSCode</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="截图工具"><a href="#截图工具" class="headerlink" title="截图工具"></a>截图工具</h3><p>最好用的当属Kazan和Shutter，前者不仅能截屏还能录屏；后者截屏功能相对更加强大。<br>命令行apt安装即可。</p><h3 id="办公软件"><a href="#办公软件" class="headerlink" title="办公软件"></a>办公软件</h3><p>WPS，支持国产</p><h3 id="远程控制"><a href="#远程控制" class="headerlink" title="远程控制"></a>远程控制</h3><p>用过Google chrome desktop, Teamviewer等一大堆软件，现在表示还是向日(Sunlogin)最好用…</p><h3 id="c-编译软件"><a href="#c-编译软件" class="headerlink" title="c++编译软件"></a>c++编译软件</h3><p>有很多，推荐一款常用的 Bazel</p><h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><p>用来用去，最好的还是VSCode。此外你也可以尝试Atom</p>]]></content>
       
       
       <categories>
@@ -164,7 +164,7 @@
       <link href="/2022/12/02/bian-xie-ke-du-dai-ma-de-yi-zhu-4/"/>
       <url>/2022/12/02/bian-xie-ke-du-dai-ma-de-yi-zhu-4/</url>
       
-        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>第一次被推荐这本书的时候我已经写了两年代码。尽管自己已经形成了一套命名和注释方法，但是对于代码的可阅读性并没有太过深入的思考。_<a href="https://mcusoft.files.wordpress.com/2015/04/the-art-of-readable-code.pdf">The Art of Readable Code</a>_ (中文译名<a href="https://awesome-programming-books.github.io/clean-code/%E7%BC%96%E5%86%99%E5%8F%AF%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E8%89%BA%E6%9C%AF.pdf">《编写可读代码的艺术》</a>)通过15个章节从简到繁，轻松又愉快的使你明白如何写出‘易于理解’的代码。</p><h1 id="Part-4-精选话题"><a href="#Part-4-精选话题" class="headerlink" title="Part 4. 精选话题"></a>Part 4. 精选话题</h1><p>在本书的最后一部分，之前讨论的各种技巧会应用到两个精选的话题中。</p><h3 id="第14章—测试与可读性"><a href="#第14章—测试与可读性" class="headerlink" title="第14章—测试与可读性"></a>第14章—测试与可读性</h3><h3 id="第15章—设计并改进“分钟-x2F-小时计数器”"><a href="#第15章—设计并改进“分钟-x2F-小时计数器”" class="headerlink" title="第15章—设计并改进“分钟/小时计数器”"></a>第15章—设计并改进“分钟/小时计数器”</h3>]]></content>
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>第一次被推荐这本书的时候我已经写了两年代码。尽管自己已经形成了一套命名和注释方法，但是对于代码的可阅读性并没有太过深入的思考。_<a href="https://mcusoft.files.wordpress.com/2015/04/the-art-of-readable-code.pdf">The Art of Readable Code</a>_ (中文译名<a href="https://awesome-programming-books.github.io/clean-code/%E7%BC%96%E5%86%99%E5%8F%AF%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E8%89%BA%E6%9C%AF.pdf">《编写可读代码的艺术》</a>)通过15个章节从简到繁，轻松又愉快的使你明白如何写出‘易于理解’的代码。</p><h1 id="Part-4-精选话题"><a href="#Part-4-精选话题" class="headerlink" title="Part 4. 精选话题"></a>Part 4. 精选话题</h1><p>在本书的最后一部分，之前讨论的各种技巧会应用到两个精选的话题中。</p><h3 id="第14章—测试与可读性"><a href="#第14章—测试与可读性" class="headerlink" title="第14章—测试与可读性"></a>第14章—测试与可读性</h3><p><strong>测试应当具有可读性，以便使其他程序员可以舒服的改变或者增加测试</strong><br>记住对使用者隐去不重要的细节，以便更重要的细节会更为突出；</p><h3 id="第15章—设计并改进“分钟-x2F-小时计数器”"><a href="#第15章—设计并改进“分钟-x2F-小时计数器”" class="headerlink" title="第15章—设计并改进“分钟/小时计数器”"></a>第15章—设计并改进“分钟/小时计数器”</h3>]]></content>
       
       
       <categories>
@@ -179,6 +179,31 @@
             <tag> Markdown </tag>
             
             <tag> 读书分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Google开源项目风格指南——Python风格规范</title>
+      <link href="/2022/12/01/google-feng-ge-zhi-nan/"/>
+      <url>/2022/12/01/google-feng-ge-zhi-nan/</url>
+      
+        <content type="html"><![CDATA[<h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
             
         </tags>
       
