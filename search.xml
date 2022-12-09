@@ -204,6 +204,31 @@
     
     
     <entry>
+      <title>c++实用的库</title>
+      <link href="/2022/12/01/c-you-yong-de-ku/"/>
+      <url>/2022/12/01/c-you-yong-de-ku/</url>
+      
+        <content type="html"><![CDATA[<p>c++和Python不同，后者有pip这样的工具来管理模组。c++很多库需要自己下载源码编译。本文旨在分享那些实用的库的安装使用方法</p><h3 id="Boost库"><a href="#Boost库" class="headerlink" title="Boost库"></a>Boost库</h3><p>一定首先安装Boos库，他是很多其他库的基石</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install mpi-default-dev　</span><br><span class="line">sudo apt-get install libicu-dev　   </span><br><span class="line">sudo apt-get install python-dev　</span><br><span class="line">sudo apt-get install libbz2-dev　</span><br></pre></td></tr></tbody></table></figure><p>boost库源文件下载 <a href="https://sourceforge.net/projects/boost/">https://sourceforge.net/projects/boost/</a><br>解压后进入文件夹执行</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./bootstrap.sh</span><br><span class="line">sudo ./b2</span><br><span class="line">sudo ./b2 install</span><br></pre></td></tr></tbody></table></figure><p><strong>这个过程可能很久..</strong><br><a href="https://www.cnblogs.com/nanmi/p/15161211.html">安装Boost库</a></p><h3 id="NumCPP"><a href="#NumCPP" class="headerlink" title="NumCPP"></a>NumCPP</h3><p>熟悉Python的人一定用过NumPy，同理c++也有这样的库。<br><a href="https://www.cnblogs.com/nanmi/p/15161211.html">安装NumCPP库</a></p><h3 id="openCV"><a href="#openCV" class="headerlink" title="openCV"></a>openCV</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> c++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>c++编译那些事儿</title>
       <link href="/2022/12/01/c-bian-yi-na-xie-shi/"/>
       <url>/2022/12/01/c-bian-yi-na-xie-shi/</url>

@@ -220,6 +220,32 @@
   </entry>
   
   <entry>
+    <title>c++实用的库</title>
+    <link href="https://rd-zhang.github.io/2022/12/01/c-you-yong-de-ku/"/>
+    <id>https://rd-zhang.github.io/2022/12/01/c-you-yong-de-ku/</id>
+    <published>2022-11-30T16:00:00.000Z</published>
+    <updated>2022-12-09T09:30:15.021Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;c++和Python不同，后者有pip这样的工具来管理模组。c++很多库需要自己下载源码编译。本文旨在分享那些实用的库的安装使用方法&lt;/p&gt;
+&lt;h3 id=&quot;Boost库&quot;&gt;&lt;a href=&quot;#Boost库&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="c++" scheme="https://rd-zhang.github.io/categories/c/"/>
+    
+    
+    <category term="c++" scheme="https://rd-zhang.github.io/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
     <title>c++编译那些事儿</title>
     <link href="https://rd-zhang.github.io/2022/12/01/c-bian-yi-na-xie-shi/"/>
     <id>https://rd-zhang.github.io/2022/12/01/c-bian-yi-na-xie-shi/</id>
