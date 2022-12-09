@@ -113,14 +113,14 @@
       
       <categories>
           
-          <category> 读书分享 </category>
+          <category> 读书 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 读书分享 </tag>
+            <tag> 读书 </tag>
             
         </tags>
       
@@ -138,14 +138,14 @@
       
       <categories>
           
-          <category> 读书分享 </category>
+          <category> 读书 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 读书分享 </tag>
+            <tag> 读书 </tag>
             
         </tags>
       
@@ -163,14 +163,14 @@
       
       <categories>
           
-          <category> 读书分享 </category>
+          <category> 读书 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 读书分享 </tag>
+            <tag> 读书 </tag>
             
         </tags>
       
@@ -188,14 +188,39 @@
       
       <categories>
           
-          <category> 读书分享 </category>
+          <category> 读书 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 读书分享 </tag>
+            <tag> 读书 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>c++编译那些事儿</title>
+      <link href="/2022/12/01/c-bian-yi-na-xie-shi/"/>
+      <url>/2022/12/01/c-bian-yi-na-xie-shi/</url>
+      
+        <content type="html"><![CDATA[<p>我首先深入学习了Python，然后才是c++。尽管本科一年级学过c语言，但是在visual studio里面的一件编译运行和在Linux下手动编译很不一样。</p><h2 id="为什么要编译"><a href="#为什么要编译" class="headerlink" title="为什么要编译"></a>为什么要编译</h2><p>说白了就是把高级语言翻译成汇编语言、机器码这种计算机能够理解的语言。Python相当于边编译边运行，而c++先编译完再运行，后者自然速度起飞。</p><h2 id="编译工具"><a href="#编译工具" class="headerlink" title="编译工具"></a>编译工具</h2><p>长话短说，对于Linux下的cpp文件，我们可以使用免费开源的g++，比如<code>g++ main.cpp -o demo</code> 是把main.cpp编译并生成名为demo的可执行文件。</p><p>g++是GCC中的GUN C++ Compiler。当程序只有一个源文件时，直接就可以用gcc/g++命令编译。但是当程序包含很多个源文件时，这是一件很头疼的事情！</p><p>所以出现了make工具！make工具可以看成是一个智能的批处理工具，它本身并没有编译和链接的功能，而是用类似于批处理的方式—通过调用makefile文件中用户指定的命令来进行编译和链接的。</p><p>makefile是什么？简单的说就像一首歌的乐谱，make工具就像指挥家，指挥家根据乐谱指挥整个乐团怎么样演奏，make工具就根据makefile中的命令进行编译和链接的。makefile命令中就包含了调用g++（也可以是别的编译器）去编译某个源文件的命令。</p><h3 id="make-vs-Cmake"><a href="#make-vs-Cmake" class="headerlink" title="make vs Cmake"></a>make vs Cmake</h3><p>makefile在一些简单的工程完全可以人工手下，但是当工程非常大的时候，手写makefile也是非常麻烦的，如果换了个平台makefile又要重新修改。</p><p>这时候就出现了Cmake这个工具，cmake就可以更加简单的生成makefile文件给上面那个make用。当然cmake还有其他功能，就是可以跨平台生成对应平台能用的makefile，你不用再自己去修改了。</p><p>可是cmake根据什么生成makefile呢？它又要根据一个叫CMakeLists.txt文件去生成makefile。</p><h3 id="Cmake-vs-Bazel"><a href="#Cmake-vs-Bazel" class="headerlink" title="Cmake vs Bazel"></a>Cmake vs Bazel</h3><p>Bazel是Google开源的编译构建工具，以Monolithic Repository为理念。与makefile &amp; CMake不同，Bazel另起炉灶，采用client/server运行模式，为云编译而生。Bazel工具将编译过程分三个阶段：Load Phase/Analysis Phase/Execution phase。研发人员实现workspace/build/.bzl三种文件，Bazel执行这些文件生成action graph，执行action来构建项目。</p><h2 id="怎么选择编译工具？"><a href="#怎么选择编译工具？" class="headerlink" title="怎么选择编译工具？"></a>怎么选择编译工具？</h2><p>因为Bazel采用了类似Python的语法，所以其学习曲线相比CMake要平缓一些。Bazel对thirdparty支持还是非常友好的。</p><p>综合考虑时，CMake是一个尽管保守但仍旧不错的选择。我个人建议，如果你的团队在用Bazel，则可以尝试Bazel。否则仍然推荐先使用Cmake。</p><p><a href="https://blog.csdn.net/hblhly/article/details/80740493">ref1</a><br><a href="https://zhuanlan.zhihu.com/p/112712537">ref2</a><br><a href="https://www.jianshu.com/p/d01472734a78">ref3</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> c++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c++ </tag>
             
         </tags>
       
@@ -213,14 +238,16 @@
       
       <categories>
           
-          <category> 读书分享 </category>
+          <category> 读书 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 读书分享 </tag>
+            <tag> 读书 </tag>
+            
+            <tag> 变得更强 </tag>
             
         </tags>
       
