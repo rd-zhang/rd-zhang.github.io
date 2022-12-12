@@ -6,7 +6,7 @@
   <link href="https://rd-zhang.github.io/atom.xml" rel="self"/>
   
   <link href="https://rd-zhang.github.io/"/>
-  <updated>2022-12-08T07:37:17.875Z</updated>
+  <updated>2022-12-12T06:13:52.165Z</updated>
   <id>https://rd-zhang.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>c++函数返回多值</title>
+    <link href="https://rd-zhang.github.io/2022/12/12/c-han-shu-fan-hui-duo-zhi-zong-jie/"/>
+    <id>https://rd-zhang.github.io/2022/12/12/c-han-shu-fan-hui-duo-zhi-zong-jie/</id>
+    <published>2022-12-11T16:00:00.000Z</published>
+    <updated>2022-12-12T06:13:52.165Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;用惯了Python，才发现c++函数默认是返回一个值/无返回值…&lt;br&gt;但是这怎么能难道聪明的工程师们，下面总结几个c++常用的返回多值办法，std::pair在此不讨论，因为他只能返回两个值…&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="c++" scheme="https://rd-zhang.github.io/categories/c/"/>
+    
+    
+    <category term="c++" scheme="https://rd-zhang.github.io/tags/c/"/>
+    
+  </entry>
   
   <entry>
     <title>Google开源项目风格指南——Python风格规范</title>
