@@ -6,7 +6,7 @@
   <link href="https://rd-zhang.github.io/atom.xml" rel="self"/>
   
   <link href="https://rd-zhang.github.io/"/>
-  <updated>2022-12-12T06:13:52.165Z</updated>
+  <updated>2022-12-12T06:30:03.564Z</updated>
   <id>https://rd-zhang.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://rd-zhang.github.io/2022/12/12/c-han-shu-fan-hui-duo-zhi-zong-jie/"/>
     <id>https://rd-zhang.github.io/2022/12/12/c-han-shu-fan-hui-duo-zhi-zong-jie/</id>
     <published>2022-12-11T16:00:00.000Z</published>
-    <updated>2022-12-12T06:13:52.165Z</updated>
+    <updated>2022-12-12T06:30:03.564Z</updated>
     
     
       
@@ -39,6 +39,32 @@
     
     
     <category term="c++" scheme="https://rd-zhang.github.io/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使Python运行更快</title>
+    <link href="https://rd-zhang.github.io/2022/12/12/ru-he-shi-python-yun-xing-geng-kuai/"/>
+    <id>https://rd-zhang.github.io/2022/12/12/ru-he-shi-python-yun-xing-geng-kuai/</id>
+    <published>2022-12-11T16:00:00.000Z</published>
+    <updated>2022-12-12T07:50:32.494Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/267531379&quot;&gt;ref&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://rd-zhang.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://rd-zhang.github.io/tags/Python/"/>
     
   </entry>
   
