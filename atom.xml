@@ -6,7 +6,7 @@
   <link href="https://rd-zhang.github.io/atom.xml" rel="self"/>
   
   <link href="https://rd-zhang.github.io/"/>
-  <updated>2022-12-13T02:04:02.018Z</updated>
+  <updated>2022-12-14T07:31:51.421Z</updated>
   <id>https://rd-zhang.github.io/</id>
   
   <author>
@@ -17,29 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>变得更强</title>
-    <link href="https://rd-zhang.github.io/2022/12/13/xing-fa-01-xing-fa-lun/"/>
-    <id>https://rd-zhang.github.io/2022/12/13/xing-fa-01-xing-fa-lun/</id>
-    <published>2022-12-12T16:00:00.000Z</published>
-    <updated>2022-12-13T02:04:02.018Z</updated>
+    <title>编写高质量代码改善Python程序的 91 个建议</title>
+    <link href="https://rd-zhang.github.io/2022/12/14/bian-xie-gao-zhi-liang-dai-ma-gai-shan-python-cheng-xu-de-91-ge-jian-yi/"/>
+    <id>https://rd-zhang.github.io/2022/12/14/bian-xie-gao-zhi-liang-dai-ma-gai-shan-python-cheng-xu-de-91-ge-jian-yi/</id>
+    <published>2022-12-13T16:00:00.000Z</published>
+    <updated>2022-12-14T07:31:51.421Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://l1nwatch.gitbook.io/writing_solid_python_code_gitbook/&quot;&gt;ref&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;建议-1：理解-Pythonic-概念&quot;&gt;&lt;a</summary>
         
       
     
     
     
-    <category term="变得更强" scheme="https://rd-zhang.github.io/categories/%E5%8F%98%E5%BE%97%E6%9B%B4%E5%BC%BA/"/>
+    <category term="Python" scheme="https://rd-zhang.github.io/categories/Python/"/>
     
     
-    <category term="刑法" scheme="https://rd-zhang.github.io/tags/%E5%88%91%E6%B3%95/"/>
-    
-    <category term="变得更强" scheme="https://rd-zhang.github.io/tags/%E5%8F%98%E5%BE%97%E6%9B%B4%E5%BC%BA/"/>
+    <category term="Python" scheme="https://rd-zhang.github.io/tags/Python/"/>
     
   </entry>
   
@@ -83,32 +82,6 @@
         
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/267531379&quot;&gt;ref&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;避免全局变量-记得使用main函数&quot;&gt;&lt;a href=&quot;#避免全局变量-记得使用main函数&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://rd-zhang.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://rd-zhang.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Google开源项目风格指南——Python风格规范</title>
-    <link href="https://rd-zhang.github.io/2022/12/08/pypy-rang-python-qi-fei/"/>
-    <id>https://rd-zhang.github.io/2022/12/08/pypy-rang-python-qi-fei/</id>
-    <published>2022-12-07T16:00:00.000Z</published>
-    <updated>2022-12-08T07:37:17.875Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents/&quot;&gt;Python风格指南(中文版)&lt;/a&gt;&lt;/p&gt;
-&lt;h3</summary>
         
       
     
@@ -177,7 +150,7 @@
     <link href="https://rd-zhang.github.io/2022/12/07/you-jie-zhi-de-wang-zhan/"/>
     <id>https://rd-zhang.github.io/2022/12/07/you-jie-zhi-de-wang-zhan/</id>
     <published>2022-12-06T16:00:00.000Z</published>
-    <updated>2022-12-07T09:09:21.941Z</updated>
+    <updated>2022-12-13T11:35:21.290Z</updated>
     
     
       
@@ -329,7 +302,7 @@
     <link href="https://rd-zhang.github.io/2022/12/01/c-you-yong-de-ku/"/>
     <id>https://rd-zhang.github.io/2022/12/01/c-you-yong-de-ku/</id>
     <published>2022-11-30T16:00:00.000Z</published>
-    <updated>2022-12-09T09:30:15.021Z</updated>
+    <updated>2022-12-13T11:27:33.444Z</updated>
     
     
       
@@ -408,7 +381,7 @@
     <link href="https://rd-zhang.github.io/2022/12/01/dai-geng-xin/"/>
     <id>https://rd-zhang.github.io/2022/12/01/dai-geng-xin/</id>
     <published>2022-11-30T16:00:00.000Z</published>
-    <updated>2022-12-08T06:34:27.096Z</updated>
+    <updated>2022-12-13T11:28:36.981Z</updated>
     
     
       
