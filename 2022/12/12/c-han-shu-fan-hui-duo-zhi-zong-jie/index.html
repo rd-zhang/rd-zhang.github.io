@@ -389,7 +389,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    757
+                    409
                 </div>
                 
 
@@ -414,18 +414,117 @@
                 <p>用惯了Python，才发现c++函数默认是返回一个值/无返回值…<br>但是这怎么能难道聪明的工程师们，下面总结几个c++常用的返回多值办法，std::pair在此不讨论，因为他只能返回两个值…</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43685921/article/details/123854007">C++函数返回多个值：结构体、tuple</a><br><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/returning-multiple-values-from-a-function-using-tuple-and-pair-in-c/">Returning multiple values from a function using Tuple and Pair in C++</a></p>
 <h3 id="使用tuple返回多个值"><a href="#使用tuple返回多个值" class="headerlink" title="使用tuple返回多个值"></a>使用tuple返回多个值</h3><p>相比于结构体，要实现函数返回多个值的方法，使用tuple更为简洁、灵活。<br>实现步骤：<br>1.定义函数f(x):类型为tuple<br>2.函数返回多个值:使用make_tuple(result1,result2,…)<br>3.使用函数结果：result=f(x)<br>4.取函数返回值：result1=get&lt;0&gt;(result)； result2=get&lt;1&gt;(result);</p>
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">tuple&lt;<span class="type">int</span>, <span class="type">float</span>&gt;  <span class="title">filterFloorPoint</span><span class="params">( <span class="type">int</span> max_iterations,<span class="type">float</span> in_floor_max_angle,<span class="type">float</span> Distance_Threshold)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="type">int</span> result_iterations;</span><br><span class="line">    <span class="type">float</span> result_angle_add_distance;</span><br><span class="line">    result_iterations=max_iterations*<span class="number">100</span>;</span><br><span class="line">    result_angle_add_distance=in_floor_max_angle*Distance_Threshold;</span><br><span class="line">    <span class="comment">//此时，我们想要函数返回result_iterations和result_angle_add_distance两个值</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//使用make_tuple将要返回的数据写在()里面即可，注意数据类型的顺序</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">make_tuple</span>(result_iterations,result_angle_add_distance); </span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">	<span class="type">int</span> max_iterations=<span class="number">10</span>;</span><br><span class="line">	<span class="type">float</span> in_floor_max_angle=<span class="number">10.0</span>;</span><br><span class="line">	<span class="type">float</span> Distance_Threshold=<span class="number">10.0</span>;</span><br><span class="line">	</span><br><span class="line">	tuple&lt;<span class="type">int</span>, <span class="type">float</span>&gt;  get_filterFloorPoint_result;</span><br><span class="line">	 <span class="comment">//调用 filterFloorPoint 方法</span></span><br><span class="line">	get_filterFloorPoint_result=<span class="built_in">filterFloorPoint</span>(max_iterations,in_floor_max_angle,Distance_Threshold);</span><br><span class="line">	without_floor_cloud_ptr=<span class="built_in">get</span>&lt;<span class="number">0</span>&gt;(get_filterFloorPoint_result); <span class="comment">//取第一个值</span></span><br><span class="line">	only_floor_cloud_ptr=<span class="built_in">get</span>&lt;<span class="number">1</span>&gt;(get_filterFloorPoint_result);  <span class="comment">//取第二个值</span></span><br><span class="line">	 <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre class=" language-c++"><code class="language-c++">tuple<int, float>  filterFloorPoint( int max_iterations,float in_floor_max_angle,float Distance_Threshold)
+{
+    int result_iterations;
+    float result_angle_add_distance;
+    result_iterations=max_iterations*100;
+    result_angle_add_distance=in_floor_max_angle*Distance_Threshold;
+    //此时，我们想要函数返回result_iterations和result_angle_add_distance两个值
 
+//使用make_tuple将要返回的数据写在()里面即可，注意数据类型的顺序
+    return make_tuple(result_iterations,result_angle_add_distance); 
+}
 
+int main()
+{
+    int max_iterations=10;
+    float in_floor_max_angle=10.0;
+    float Distance_Threshold=10.0;
+    
+    tuple<int, float>  get_filterFloorPoint_result;
+     //调用 filterFloorPoint 方法
+    get_filterFloorPoint_result=filterFloorPoint(max_iterations,in_floor_max_angle,Distance_Threshold);
+    without_floor_cloud_ptr=get<0>(get_filterFloorPoint_result); //取第一个值
+    only_floor_cloud_ptr=get<1>(get_filterFloorPoint_result);  //取第二个值
+     return 0;
+}
+</code></pre>
 <p>另一个例子(对比pair和tuple)</p>
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line">  </span><br><span class="line"><span class="comment">// A Method that returns multiple values using</span></span><br><span class="line"><span class="comment">// tuple in C++.</span></span><br><span class="line"><span class="function">tuple&lt;<span class="type">int</span>, <span class="type">int</span>, <span class="type">char</span>&gt; <span class="title">foo</span><span class="params">(<span class="type">int</span> n1, <span class="type">int</span> n2)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="comment">// Packing values to return a tuple</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">make_tuple</span>(n2, n1, <span class="string">'a'</span>);             </span><br><span class="line">}</span><br><span class="line">  </span><br><span class="line"><span class="comment">// A Method returns a pair of values using pair</span></span><br><span class="line"><span class="function">pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; <span class="title">foo1</span><span class="params">(<span class="type">int</span> num1, <span class="type">int</span> num2)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="comment">// Packing two values to return a pair </span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">make_pair</span>(num2, num1);            </span><br><span class="line">}</span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="type">int</span> a,b;</span><br><span class="line">    <span class="type">char</span> cc;</span><br><span class="line">      </span><br><span class="line">    <span class="comment">// Unpack the elements returned by foo</span></span><br><span class="line">    <span class="built_in">tie</span>(a, b, cc) = <span class="built_in">foo</span>(<span class="number">5</span>, <span class="number">10</span>);      </span><br><span class="line">      </span><br><span class="line">    <span class="comment">// Storing  returned values in a pair </span></span><br><span class="line">    pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; p = <span class="built_in">foo1</span>(<span class="number">5</span>,<span class="number">2</span>);  </span><br><span class="line">      </span><br><span class="line">    cout &lt;&lt; <span class="string">"Values returned by tuple: "</span>;</span><br><span class="line">    cout &lt;&lt; a &lt;&lt; <span class="string">" "</span> &lt;&lt; b &lt;&lt; <span class="string">" "</span> &lt;&lt; cc &lt;&lt; endl;</span><br><span class="line">      </span><br><span class="line">    cout &lt;&lt; <span class="string">"Values returned by Pair: "</span>;</span><br><span class="line">    cout &lt;&lt; p.first &lt;&lt; <span class="string">" "</span> &lt;&lt; p.second;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre class=" language-c++"><code class="language-c++">#include<bits/stdc++.h>
+using namespace std;
+  
+// A Method that returns multiple values using
+// tuple in C++.
+tuple<int, int, char> foo(int n1, int n2)
+{
+    // Packing values to return a tuple
+    return make_tuple(n2, n1, 'a');             
+}
+  
+// A Method returns a pair of values using pair
+pair<int, int> foo1(int num1, int num2)
+{
+    // Packing two values to return a pair 
+    return make_pair(num2, num1);            
+}
+  
+int main()
+{
+    int a,b;
+    char cc;
+      
+    // Unpack the elements returned by foo
+    tie(a, b, cc) = foo(5, 10);      
+      
+    // Storing  returned values in a pair 
+    pair<int, int> p = foo1(5,2);  
+      
+    cout << "Values returned by tuple: ";
+    cout << a << " " << b << " " << cc << endl;
+      
+    cout << "Values returned by Pair: ";
+    cout << p.first << " " << p.second;
+    return 0;
+}
+</code></pre>
 <p>其中，<code>#include&lt;bits/stdc++.h&gt;</code> 是一个万能头文件，包含了绝大多数常用的头文件！</p>
 <h3 id="使用结构体返回多个值"><a href="#使用结构体返回多个值" class="headerlink" title="使用结构体返回多个值"></a>使用结构体返回多个值</h3><p>实现步骤：<br>1.先定义一个结构体<br>2.准备我们要实现的函数(需要返回多个值)<br>3.在要实现的函数内调用结构体返回多个值<br>4.使用函数返回结果</p>
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">step <span class="number">1</span> :定义结构体 </span><br><span class="line"><span class="keyword">struct</span>  <span class="title class_">PointStruct</span></span><br><span class="line">{</span><br><span class="line">    <span class="type">float</span> without_floor;</span><br><span class="line">    <span class="type">int</span> only_floor;</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<pre class=" language-c++"><code class="language-c++">step 1 :定义结构体 
+struct  PointStruct
+{
+    float without_floor;
+    int only_floor;
+};
+</code></pre>
+<pre class=" language-c++"><code class="language-c++">step 2 :定义函数 
+//定义了一个返回值为PointStruct的函数，函数名为filterFloorPoint
+PointStruct filterFloorPoint( int max_iterations,float in_floor_max_angle,float Distance_Threshold)
+{
+    int result_iterations;
+    float result_angle_add_distance;
+    result_iterations=max_iterations*100;
+    result_angle_add_distance=in_floor_max_angle*Distance_Threshold;
+    //此时，我们想要函数返回result_iterations和result_angle_add_distance两个值
 
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">step <span class="number">2</span> :定义函数 </span><br><span class="line"><span class="comment">//定义了一个返回值为PointStruct的函数，函数名为filterFloorPoint</span></span><br><span class="line"><span class="function">PointStruct <span class="title">filterFloorPoint</span><span class="params">( <span class="type">int</span> max_iterations,<span class="type">float</span> in_floor_max_angle,<span class="type">float</span> Distance_Threshold)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="type">int</span> result_iterations;</span><br><span class="line">    <span class="type">float</span> result_angle_add_distance;</span><br><span class="line">    result_iterations=max_iterations*<span class="number">100</span>;</span><br><span class="line">    result_angle_add_distance=in_floor_max_angle*Distance_Threshold;</span><br><span class="line">    <span class="comment">//此时，我们想要函数返回result_iterations和result_angle_add_distance两个值</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//step 3:调用结构体返回多个值 </span></span><br><span class="line">    <span class="comment">//调用PointStruct结构体返回多个值 </span></span><br><span class="line">    PointStruct use_PointStruct;  <span class="comment">//use_PointStruct 可以换成你自己想要的名称</span></span><br><span class="line">    use_PointStruct.without_floor=result_iterations;</span><br><span class="line">    use_PointStruct.only_floor=result_angle_add_distance;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> use_PointStruct; <span class="comment">//只需要返回 use_PointStruct即可</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">	 <span class="comment">//step 4:调用结构体返回的多个值</span></span><br><span class="line">	<span class="type">int</span> max_iterations=<span class="number">10</span>;</span><br><span class="line">	<span class="type">float</span> in_floor_max_angle=<span class="number">10.0</span>;</span><br><span class="line">	<span class="type">float</span> Distance_Threshold=<span class="number">10.0</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="type">int</span> without_floor_cloud_ptr;</span><br><span class="line">	<span class="type">float</span> only_floor_cloud_ptr;  </span><br><span class="line">	PointStruct  use_PointStruct_now; <span class="comment">//调用PointStruct结构体</span></span><br><span class="line">	</span><br><span class="line">	 use_PointStruct_now=<span class="built_in">filterFloorPoint</span>(max_iterations,in_floor_max_angle,Distance_Threshold); <span class="comment">//调用函数</span></span><br><span class="line">	 without_floor_cloud_ptr=use_PointStruct_now.without_floor; <span class="comment">//取第一个函数返回值</span></span><br><span class="line">	 only_floor_cloud_ptr=use_PointStruct_now.only_floor;<span class="comment">//取第二个函数返回值</span></span><br><span class="line">	 <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+    //step 3:调用结构体返回多个值 
+    //调用PointStruct结构体返回多个值 
+    PointStruct use_PointStruct;  //use_PointStruct 可以换成你自己想要的名称
+    use_PointStruct.without_floor=result_iterations;
+    use_PointStruct.only_floor=result_angle_add_distance;
+
+    return use_PointStruct; //只需要返回 use_PointStruct即可
+}
+</code></pre>
+<pre class=" language-c++"><code class="language-c++">int main()
+{
+     //step 4:调用结构体返回的多个值
+    int max_iterations=10;
+    float in_floor_max_angle=10.0;
+    float Distance_Threshold=10.0;
+    
+    int without_floor_cloud_ptr;
+    float only_floor_cloud_ptr;  
+    PointStruct  use_PointStruct_now; //调用PointStruct结构体
+    
+     use_PointStruct_now=filterFloorPoint(max_iterations,in_floor_max_angle,Distance_Threshold); //调用函数
+     without_floor_cloud_ptr=use_PointStruct_now.without_floor; //取第一个函数返回值
+     only_floor_cloud_ptr=use_PointStruct_now.only_floor;//取第二个函数返回值
+     return 0;
+}
+</code></pre>
+
                 
             </div>
             <hr/>
@@ -803,7 +902,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.6k</span>&nbsp;字
+                class="white-color">10.3k</span>&nbsp;字
             
             
             

@@ -414,14 +414,36 @@
                 <p><a target="_blank" rel="noopener" href="https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents/">Python风格指南(中文版)</a></p>
 <h3 id="分号"><a href="#分号" class="headerlink" title="分号"></a>分号</h3><p>如果你先学习了c++，记得不要在行尾加分号，也不要用分号将两条命令放在同一行</p>
 <h3 id="行长度"><a href="#行长度" class="headerlink" title="行长度"></a>行长度</h3><p>每行不超过80个字符。<br>但是：url/路径等不要分割</p>
-<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Yes: foo_bar(self, width, height, color=<span class="string">'black'</span>, design=<span class="literal">None</span>, x=<span class="string">'foo'</span>,</span><br><span class="line">             emphasis=<span class="literal">None</span>, highlight=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">     <span class="keyword">if</span> (width == <span class="number">0</span> <span class="keyword">and</span> height == <span class="number">0</span> <span class="keyword">and</span></span><br><span class="line">         color == <span class="string">'red'</span> <span class="keyword">and</span> emphasis == <span class="string">'strong'</span>):</span><br></pre></td></tr></tbody></table></figure>
+<pre class=" language-python"><code class="language-python">Yes<span class="token punctuation">:</span> foo_bar<span class="token punctuation">(</span>self<span class="token punctuation">,</span> width<span class="token punctuation">,</span> height<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'black'</span><span class="token punctuation">,</span> design<span class="token operator">=</span>None<span class="token punctuation">,</span> x<span class="token operator">=</span><span class="token string">'foo'</span><span class="token punctuation">,</span>
+             emphasis<span class="token operator">=</span>None<span class="token punctuation">,</span> highlight<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
 
-<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Yes:  <span class="comment"># See details at</span></span><br><span class="line">      <span class="comment"># http://www.example.com/us/developer/documentation/api/content/v2.0/csv_file_name_extension_full_specification.html</span></span><br><span class="line"></span><br><span class="line">No:  <span class="comment"># See details at</span></span><br><span class="line">     <span class="comment"># http://www.example.com/us/developer/documentation/api/content/\</span></span><br><span class="line">     <span class="comment"># v2.0/csv_file_name_extension_full_specification.html</span></span><br></pre></td></tr></tbody></table></figure>
+     <span class="token keyword">if</span> <span class="token punctuation">(</span>width <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">and</span> height <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">and</span>
+         color <span class="token operator">==</span> <span class="token string">'red'</span> <span class="token operator">and</span> emphasis <span class="token operator">==</span> <span class="token string">'strong'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+</code></pre>
+<pre class=" language-python"><code class="language-python">Yes<span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># See details at</span>
+      <span class="token comment" spellcheck="true"># http://www.example.com/us/developer/documentation/api/content/v2.0/csv_file_name_extension_full_specification.html</span>
 
+No<span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># See details at</span>
+     <span class="token comment" spellcheck="true"># http://www.example.com/us/developer/documentation/api/content/\</span>
+     <span class="token comment" spellcheck="true"># v2.0/csv_file_name_extension_full_specification.html</span>
+</code></pre>
 <h3 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h3><p><strong>宁缺毋滥</strong></p>
 <h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><p><strong>用4个空格来缩进代码</strong><br>绝对不要用tab, 也不要tab和空格混用. 建议使用4空格的悬挂式缩进</p>
-<h3 id="序列元素尾部逗号"><a href="#序列元素尾部逗号" class="headerlink" title="序列元素尾部逗号"></a>序列元素尾部逗号</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Yes:   golomb3 = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">3</span>]</span><br><span class="line">Yes:   golomb4 = [</span><br><span class="line">           <span class="number">0</span>,</span><br><span class="line">           <span class="number">1</span>,</span><br><span class="line">           <span class="number">4</span>,</span><br><span class="line">           <span class="number">6</span>,</span><br><span class="line">       ]</span><br><span class="line"></span><br><span class="line">No:    golomb4 = [</span><br><span class="line">           <span class="number">0</span>,</span><br><span class="line">           <span class="number">1</span>,</span><br><span class="line">           <span class="number">4</span>,</span><br><span class="line">           <span class="number">6</span></span><br><span class="line">       ]</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="序列元素尾部逗号"><a href="#序列元素尾部逗号" class="headerlink" title="序列元素尾部逗号"></a>序列元素尾部逗号</h3><pre class=" language-python"><code class="language-python">Yes<span class="token punctuation">:</span>   golomb3 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+Yes<span class="token punctuation">:</span>   golomb4 <span class="token operator">=</span> <span class="token punctuation">[</span>
+           <span class="token number">0</span><span class="token punctuation">,</span>
+           <span class="token number">1</span><span class="token punctuation">,</span>
+           <span class="token number">4</span><span class="token punctuation">,</span>
+           <span class="token number">6</span><span class="token punctuation">,</span>
+       <span class="token punctuation">]</span>
 
+No<span class="token punctuation">:</span>    golomb4 <span class="token operator">=</span> <span class="token punctuation">[</span>
+           <span class="token number">0</span><span class="token punctuation">,</span>
+           <span class="token number">1</span><span class="token punctuation">,</span>
+           <span class="token number">4</span><span class="token punctuation">,</span>
+           <span class="token number">6</span>
+       <span class="token punctuation">]</span>
+</code></pre>
 <h3 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h3><p>顶级定义之间空两行, 比如函数或者类定义. 方法定义, 类定义与第一个方法之间, 都应该空一行. 函数或方法中, 某些地方要是你觉得合适, 就空一行.</p>
 <h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><p>括号内不要有空格<br>不要在逗号, 分号, 冒号前面加空格, 但应该在它们后面加(除了在行尾)<br>参数列表, 索引或切片的左括号前不应加空格<br>……</p>
 <h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>参考《编写可读代码的艺术》</p>
@@ -444,8 +466,12 @@
 <li>双下划线开头并结尾的名称(Python保留, 例如__init__)</li>
 </ul>
 <h3 id="Main"><a href="#Main" class="headerlink" title="Main"></a>Main</h3><p>即使是一个打算被用作脚本的文件, 也应该是可导入的. 并且简单的导入不应该导致这个脚本的主功能(main functionality)被执行, 这是一种副作用. 主功能应该放在一个main()函数中.</p>
-<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></tbody></table></figure>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
 
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
 <h3 id="函数长度"><a href="#函数长度" class="headerlink" title="函数长度"></a>函数长度</h3><p>推荐函数功能尽量集中,简单,小巧</p>
 <p>不对函数长度做硬性限制.但是若一个函数超过来40行,推荐考虑一下是否可以在不损害程序结构的情况下对其进行分解. </p>
 
@@ -826,7 +852,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.6k</span>&nbsp;字
+                class="white-color">10.3k</span>&nbsp;字
             
             
             

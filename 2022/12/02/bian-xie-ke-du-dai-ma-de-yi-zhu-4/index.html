@@ -389,7 +389,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    734
+                    730
                 </div>
                 
 
@@ -415,7 +415,28 @@
 <h1 id="Part-4-精选话题"><a href="#Part-4-精选话题" class="headerlink" title="Part 4. 精选话题"></a>Part 4. 精选话题</h1><p>在本书的最后一部分，之前讨论的各种技巧会应用到两个精选的话题中。</p>
 <h3 id="第14章—测试与可读性"><a href="#第14章—测试与可读性" class="headerlink" title="第14章—测试与可读性"></a>第14章—测试与可读性</h3><p><strong>测试应当具有可读性，以便使其他程序员可以舒服的改变或者增加测试</strong><br>记住对使用者隐去不重要的细节，以便更重要的细节会更为突出；<br>大多数的测试都能精炼成“对于xx的输入/情况，期望有xx的输出/行为”；<br><strong>让错误消息具有可读性</strong><br>多用 <em>assert()</em>;<br>手工打造错误消息，选择好的测试输入，又简单又能完成工作的测试值更好；<br>与其建立单个“完美”输入来完整地执行代码，不如写多个小测试，因为他们更具有可读性；<br>为测试函数命名，但是避免“test”这种没什么意义的名字；</p>
 <p>下面我们来看一个例子，在这段代码中</p>
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">Test1</span><span class="params">()</span></span>{</span><br><span class="line">  vector&lt;ScoredDocument&gt; docs;</span><br><span class="line">  docs.<span class="built_in">resize</span>(<span class="number">5</span>);</span><br><span class="line">  docs[<span class="number">0</span>].url = <span class="string">"http://example.com"</span></span><br><span class="line">  docs[<span class="number">0</span>].score = <span class="number">-5.0</span>;</span><br><span class="line">  docs[<span class="number">1</span>].url = <span class="string">"http://example.com"</span></span><br><span class="line">  docs[<span class="number">1</span>].score = <span class="number">1</span>;</span><br><span class="line">  docs[<span class="number">2</span>].url = <span class="string">"http://example.com"</span></span><br><span class="line">  docs[<span class="number">2</span>].score = <span class="number">4</span>;</span><br><span class="line">  docs[<span class="number">3</span>].url = <span class="string">"http://example.com"</span></span><br><span class="line">  docs[<span class="number">3</span>].score = <span class="number">-99998.7</span>;</span><br><span class="line">  docs[<span class="number">4</span>].url = <span class="string">"http://example.com"</span></span><br><span class="line">  docs[<span class="number">4</span>].score = <span class="number">3.0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">SortAndFileterDocs</span>(&amp;Docs);</span><br><span class="line"></span><br><span class="line">  <span class="built_in">assert</span>(docs.<span class="built_in">size</span>() == <span class="number">3</span>);</span><br><span class="line">  <span class="built_in">assert</span>(docs[<span class="number">0</span>].score == <span class="number">4</span>);</span><br><span class="line">  <span class="built_in">assert</span>(docs[<span class="number">1</span>].score == <span class="number">3.0</span>);</span><br><span class="line">  <span class="built_in">assert</span>(docs[<span class="number">2</span>].score == <span class="number">1</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre class=" language-c++"><code class="language-c++">void Test1(){
+  vector<ScoredDocument> docs;
+  docs.resize(5);
+  docs[0].url = "http://example.com"
+  docs[0].score = -5.0;
+  docs[1].url = "http://example.com"
+  docs[1].score = 1;
+  docs[2].url = "http://example.com"
+  docs[2].score = 4;
+  docs[3].url = "http://example.com"
+  docs[3].score = -99998.7;
+  docs[4].url = "http://example.com"
+  docs[4].score = 3.0;
+
+  SortAndFileterDocs(&Docs);
+
+  assert(docs.size() == 3);
+  assert(docs[0].score == 4);
+  assert(docs[1].score == 3.0);
+  assert(docs[2].score == 1);
+}
+</code></pre>
 <p>这段测试代码至少犯了8条错误：</p>
 <ul>
 <li>测试太长，充满不重要的细节</li>
@@ -806,7 +827,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.6k</span>&nbsp;字
+                class="white-color">10.3k</span>&nbsp;字
             
             
             
