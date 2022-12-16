@@ -6,7 +6,7 @@
   <link href="https://rd-zhang.github.io/atom.xml" rel="self"/>
   
   <link href="https://rd-zhang.github.io/"/>
-  <updated>2022-12-16T05:49:42.270Z</updated>
+  <updated>2022-12-16T05:50:58.378Z</updated>
   <id>https://rd-zhang.github.io/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>数据结构与算法练习</title>
-    <link href="https://rd-zhang.github.io/2022/12/16/shu-ju-jie-gou-yu-suan-fa-lian-xi-copy/"/>
-    <id>https://rd-zhang.github.io/2022/12/16/shu-ju-jie-gou-yu-suan-fa-lian-xi-copy/</id>
-    <published>2022-12-15T16:00:00.000Z</published>
-    <updated>2022-12-16T05:49:42.270Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;常见的数据结构&quot;&gt;&lt;a href=&quot;#常见的数据结构&quot; class=&quot;headerlink&quot; title=&quot;常见的数据结构&quot;&gt;&lt;/a&gt;常见的数据结构&lt;/h2&gt;&lt;h4 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="变得更强" scheme="https://rd-zhang.github.io/categories/%E5%8F%98%E5%BE%97%E6%9B%B4%E5%BC%BA/"/>
-    
-    
-    <category term="c++" scheme="https://rd-zhang.github.io/tags/c/"/>
-    
-    <category term="Python" scheme="https://rd-zhang.github.io/tags/Python/"/>
-    
-  </entry>
   
   <entry>
     <title>数据结构与算法练习</title>
@@ -66,27 +39,28 @@
     
     <category term="c++" scheme="https://rd-zhang.github.io/tags/c/"/>
     
-    <category term="Python" scheme="https://rd-zhang.github.io/tags/Python/"/>
-    
     <category term="数据结构" scheme="https://rd-zhang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="Python" scheme="https://rd-zhang.github.io/tags/Python/"/>
     
     <category term="算法" scheme="https://rd-zhang.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
-    <title>《算法图解》(一)</title>
-    <link href="https://rd-zhang.github.io/2022/12/16/suan-fa-tu-jie-1/"/>
-    <id>https://rd-zhang.github.io/2022/12/16/suan-fa-tu-jie-1/</id>
+    <title>《算法图解》阅读笔记</title>
+    <link href="https://rd-zhang.github.io/2022/12/16/suan-fa-tu-jie/"/>
+    <id>https://rd-zhang.github.io/2022/12/16/suan-fa-tu-jie/</id>
     <published>2022-12-15T16:00:00.000Z</published>
-    <updated>2022-12-16T05:51:16.990Z</updated>
+    <updated>2022-12-16T07:12:46.731Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;第1章-算法简介&quot;&gt;&lt;a href=&quot;#第1章-算法简介&quot; class=&quot;headerlink&quot; title=&quot;第1章 算法简介&quot;&gt;&lt;/a&gt;第1章 算法简介&lt;/h3&gt;&lt;p&gt;算法其实就是一组完成任务的指令。&lt;/p&gt;
+&lt;p&gt;一个入门级别的算法就是</summary>
         
       
     
