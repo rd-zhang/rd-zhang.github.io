@@ -4,6 +4,91 @@
   
     
     <entry>
+      <title>数据结构与算法练习</title>
+      <link href="/2022/12/16/shu-ju-jie-gou-yu-suan-fa-lian-xi-copy/"/>
+      <url>/2022/12/16/shu-ju-jie-gou-yu-suan-fa-lian-xi-copy/</url>
+      
+        <content type="html"><![CDATA[<h2 id="常见的数据结构"><a href="#常见的数据结构" class="headerlink" title="常见的数据结构"></a>常见的数据结构</h2><h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><h4 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h4><h4 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h4><h4 id="哈希表"><a href="#哈希表" class="headerlink" title="哈希表"></a>哈希表</h4><h4 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h4><h4 id="图"><a href="#图" class="headerlink" title="图"></a>图</h4><h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h4 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h4><h4 id="搜索算法"><a href="#搜索算法" class="headerlink" title="搜索算法"></a>搜索算法</h4><h4 id="双指针法"><a href="#双指针法" class="headerlink" title="双指针法"></a>双指针法</h4><h4 id="回溯-x2F-递归算法"><a href="#回溯-x2F-递归算法" class="headerlink" title="回溯/递归算法"></a>回溯/递归算法</h4><h4 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h4><h4 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h4><h4 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h4><h4 id="图论算法"><a href="#图论算法" class="headerlink" title="图论算法"></a>图论算法</h4><p>主要参考<a href="https://programmercarl.com/">代码随想录</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 变得更强 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c++ </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数据结构与算法练习</title>
+      <link href="/2022/12/16/shu-ju-jie-gou-yu-suan-fa-lian-xi/"/>
+      <url>/2022/12/16/shu-ju-jie-gou-yu-suan-fa-lian-xi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="常见的数据结构"><a href="#常见的数据结构" class="headerlink" title="常见的数据结构"></a>常见的数据结构</h2><h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><h4 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h4><h4 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h4><h4 id="哈希表"><a href="#哈希表" class="headerlink" title="哈希表"></a>哈希表</h4><h4 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h4><h4 id="图"><a href="#图" class="headerlink" title="图"></a>图</h4><h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h4 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h4><h4 id="搜索算法"><a href="#搜索算法" class="headerlink" title="搜索算法"></a>搜索算法</h4><h4 id="双指针法"><a href="#双指针法" class="headerlink" title="双指针法"></a>双指针法</h4><h4 id="回溯-x2F-递归算法"><a href="#回溯-x2F-递归算法" class="headerlink" title="回溯/递归算法"></a>回溯/递归算法</h4><h4 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h4><h4 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h4><h4 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h4><h4 id="图论算法"><a href="#图论算法" class="headerlink" title="图论算法"></a>图论算法</h4><p>主要参考<a href="https://programmercarl.com/">代码随想录</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 变得更强 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c++ </tag>
+            
+            <tag> Python </tag>
+            
+            <tag> 数据结构 </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《算法图解》(一)</title>
+      <link href="/2022/12/16/suan-fa-tu-jie-1/"/>
+      <url>/2022/12/16/suan-fa-tu-jie-1/</url>
+      
+        <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 变得更强 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>c++八大数据结构</title>
       <link href="/2022/12/15/c-ba-da-shu-ju-jie-gou/"/>
       <url>/2022/12/15/c-ba-da-shu-ju-jie-gou/</url>
@@ -21,6 +106,8 @@
         <tags>
             
             <tag> c++ </tag>
+            
+            <tag> 数据结构 </tag>
             
         </tags>
       
