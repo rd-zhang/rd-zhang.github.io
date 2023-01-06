@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>搭建你的第一个云数据库</title>
+      <link href="/2023/01/06/da-jian-di-yi-ge-yun-shu-ju-ku/"/>
+      <url>/2023/01/06/da-jian-di-yi-ge-yun-shu-ju-ku/</url>
+      
+        <content type="html"><![CDATA[<p>最近开始接触数据库，第一个应用的自然是大名鼎鼎的MySQL。本地安装MySQL并不复杂，但是如何用数据库实现一些有趣的事值得深究。</p><p>经过探索，我发现了两个宝藏云数据库网站 <strong>完全免费！</strong> ，每个月提供的空间、读写次数完全能够满足个人学习与小型应用。</p><ol><li><a href="https://memfiredb.com/?utm_source=zhhwj">memfiredb</a>，有中文支持，但是空间稍小，而且只能创建两个仓库…</li><li><a href="https://app.planetscale.com/">planetscale</a>，虽然是美国网站，但是直接访问没有任何问题，新建仓库时选择默认节点(比如我默认是在弗吉尼亚)即可。</li></ol><p>同时在本地安装mysql cli，需要GUI的话推荐使用Navicat或者EMMA这些主流GUI，或者直接在命令行敲键盘2333<br>具体的创建更改删除表等指令可以参考菜鸟教程或者廖雪峰的网站(廖雪峰的SQL教程烂尾且只适合小白快速入门，作为字典还是太浅薄了)</p><p>TODO 写一个微信小程序，可以实现在线读取显示云数据库内容，比如我曾到访过的国家城市等。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> SQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+            <tag> MySQL </tag>
+            
+            <tag> SQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>创建docker镜像并运行脚本</title>
       <link href="/2022/12/30/chuang-jian-docker-jing-xiang-bing-yun-xing-jiao-ben/"/>
       <url>/2022/12/30/chuang-jian-docker-jing-xiang-bing-yun-xing-jiao-ben/</url>

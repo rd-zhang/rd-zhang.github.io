@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="《算法图解》阅读笔记, 图Tu的小站">
+    <meta name="keywords" content="搭建你的第一个云数据库, 图Tu的小站">
     <meta name="description" content="智慧可以移山">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>《算法图解》阅读笔记 | 图Tu的小站</title>
+    <title>搭建你的第一个云数据库 | 图Tu的小站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">《算法图解》阅读笔记</h1>
+                    <h1 class="description center-align post-title">搭建你的第一个云数据库</h1>
                 </div>
             </div>
         </div>
@@ -350,12 +350,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/%E5%88%86%E4%BA%AB/">
+                                <span class="chip bg-color">分享</span>
                             </a>
                         
-                            <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                <span class="chip bg-color">算法</span>
+                            <a href="/tags/MySQL/">
+                                <span class="chip bg-color">MySQL</span>
+                            </a>
+                        
+                            <a href="/tags/SQL/">
+                                <span class="chip bg-color">SQL</span>
                             </a>
                         
                     </div>
@@ -366,8 +370,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="post-category">
-                                读书
+                            <a href="/categories/SQL/" class="post-category">
+                                SQL
                             </a>
                         
                     </div>
@@ -379,21 +383,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-12-16
+                    2023-01-06
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-03
+                    2023-01-06
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    480
+                    300
                 </div>
                 
 
@@ -415,71 +419,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="第1章-算法简介"><a href="#第1章-算法简介" class="headerlink" title="第1章 算法简介"></a>第1章 算法简介</h3><p>算法其实就是一组完成任务的指令。</p>
-<p>一个入门级别的算法就是 <strong>二分查找</strong>, 其时间复杂度为 O(log n),即对数时间。</p>
-<p>但是其实算法的速度指的并非时间，而是操作数的增速。</p>
-<h3 id="第2章-排序选择"><a href="#第2章-排序选择" class="headerlink" title="第2章 排序选择"></a>第2章 排序选择</h3><p>数组和链表在内存中储存方式不同。<br>选择排序复杂度为O($n^2$)</p>
-<h3 id="第3章-递归"><a href="#第3章-递归" class="headerlink" title="第3章 递归"></a>第3章 递归</h3><p>注意添加基线条件</p>
-<p>经典例子–求阶乘：</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">fact</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">if</span> x <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
-        <span class="token keyword">return</span> <span class="token number">1</span>
-    <span class="token keyword">else</span><span class="token punctuation">:</span>
-        <span class="token keyword">return</span> x <span class="token operator">*</span> fact<span class="token punctuation">(</span>x<span class="token number">-1</span><span class="token punctuation">)</span>
-</code></pre>
-<p>总之，递归就是调用自己的函数<br>每个递归函数都包括：基线条件和递归条件</p>
-<h3 id="第4章-快速排序"><a href="#第4章-快速排序" class="headerlink" title="第4章 快速排序"></a>第4章 快速排序</h3><p>快速排序是一种非常elegant的算法，它将用到分而治之，A.K.A. Divide &amp; Conquer 算法。</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">quicksort</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">if</span> len<span class="token punctuation">(</span>array<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">:</span>
-        <span class="token keyword">return</span> array
-    <span class="token keyword">else</span><span class="token punctuation">:</span>
-        pivot <span class="token operator">=</span> array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
-        
-        less <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> array<span class="token punctuation">[</span>i<span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token keyword">if</span> i<span class="token operator">&lt;=</span>pivot<span class="token punctuation">]</span>
-        greater <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> array<span class="token punctuation">[</span>i<span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token keyword">if</span> i<span class="token operator">></span>pivot<span class="token punctuation">]</span>
-
-        <span class="token keyword">return</span> quicksort<span class="token punctuation">(</span>less<span class="token punctuation">)</span><span class="token operator">+</span><span class="token punctuation">[</span>pivot<span class="token punctuation">]</span><span class="token operator">+</span>quicksort<span class="token punctuation">[</span>greater<span class="token punctuation">]</span>
-</code></pre>
-<h3 id="第5章-散列表"><a href="#第5章-散列表" class="headerlink" title="第5章 散列表"></a>第5章 散列表</h3><p>其实就是字典……</p>
-<h3 id="第6章-广度优先搜索"><a href="#第6章-广度优先搜索" class="headerlink" title="第6章 广度优先搜索"></a>第6章 广度优先搜索</h3><p>BFS可以帮助你找出两样东西之间的最短距离，比如跳棋AI计算最少走多少步可以获胜。</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> collections <span class="token keyword">import</span> deque
-
-graph <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-graph<span class="token punctuation">[</span><span class="token string">"you"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"alice"</span><span class="token punctuation">,</span> <span class="token string">"bob"</span><span class="token punctuation">,</span> <span class="token string">"claire"</span><span class="token punctuation">]</span>
-graph<span class="token punctuation">[</span><span class="token string">"bob"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"anuj"</span><span class="token punctuation">,</span> <span class="token string">"peggy"</span><span class="token punctuation">]</span>
-graph<span class="token punctuation">[</span><span class="token string">"alice"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"peggy"</span><span class="token punctuation">]</span>
-graph<span class="token punctuation">[</span><span class="token string">"claire"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"thom"</span><span class="token punctuation">,</span> <span class="token string">"jonny"</span><span class="token punctuation">]</span>
-graph<span class="token punctuation">[</span><span class="token string">"anuj"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-graph<span class="token punctuation">[</span><span class="token string">"peggy"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-graph<span class="token punctuation">[</span><span class="token string">"thom"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-graph<span class="token punctuation">[</span><span class="token string">"jonny"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-
-<span class="token keyword">def</span> <span class="token function">search</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">:</span>
-    search_queue <span class="token operator">=</span> deque<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    search_queue <span class="token operator">+=</span> graph<span class="token punctuation">[</span>name<span class="token punctuation">]</span>
-    searched <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-    <span class="token keyword">while</span> search_queue <span class="token punctuation">:</span>
-        person <span class="token operator">=</span> search_queue<span class="token punctuation">.</span>popleft<span class="token punctuation">(</span><span class="token punctuation">)</span>
-        <span class="token keyword">if</span> person <span class="token operator">not</span> <span class="token keyword">in</span> searched <span class="token punctuation">:</span>
-            <span class="token keyword">if</span> person_is_seller<span class="token punctuation">(</span>person<span class="token punctuation">)</span> <span class="token punctuation">:</span>
-                <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Person "</span> <span class="token operator">+</span> person <span class="token operator">+</span><span class="token string">"is a mango seller"</span><span class="token punctuation">)</span>
-                <span class="token keyword">return</span> <span class="token boolean">True</span>
-            <span class="token keyword">else</span> <span class="token punctuation">:</span>
-                search_queue <span class="token operator">+=</span> graph<span class="token punctuation">[</span>person<span class="token punctuation">]</span>
-                searched<span class="token punctuation">.</span>append<span class="token punctuation">(</span>person<span class="token punctuation">)</span>
-    <span class="token keyword">return</span> <span class="token boolean">False</span>
-
-
-<span class="token keyword">def</span> <span class="token function">person_is_seller</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">:</span>
-    <span class="token keyword">return</span> name<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'m'</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span>search<span class="token punctuation">(</span><span class="token string">'you'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-</code></pre>
-<h3 id="第7章-Dijkstra算法"><a href="#第7章-Dijkstra算法" class="headerlink" title="第7章 Dijkstra算法"></a>第7章 Dijkstra算法</h3><p>BFS用于在非加权图查找<br>加权图查找使用Dijkstra (权重为正)</p>
-<h3 id="第8章-贪婪算法"><a href="#第8章-贪婪算法" class="headerlink" title="第8章 贪婪算法"></a>第8章 贪婪算法</h3><p>贪婪算法：每步都选择最优的做法</p>
-<h3 id="第9章-动态规划"><a href="#第9章-动态规划" class="headerlink" title="第9章 动态规划"></a>第9章 动态规划</h3><p>动态解决子问题，再解决母问题</p>
-<h3 id="第10章-K最近邻算法"><a href="#第10章-K最近邻算法" class="headerlink" title="第10章 K最近邻算法"></a>第10章 K最近邻算法</h3><p>KNN 算法用于分类问题</p>
-<h3 id="第11章-接下来如何做"><a href="#第11章-接下来如何做" class="headerlink" title="第11章 接下来如何做"></a>第11章 接下来如何做</h3><p>略</p>
+                <p>最近开始接触数据库，第一个应用的自然是大名鼎鼎的MySQL。本地安装MySQL并不复杂，但是如何用数据库实现一些有趣的事值得深究。</p>
+<p>经过探索，我发现了两个宝藏云数据库网站 <strong>完全免费！</strong> ，每个月提供的空间、读写次数完全能够满足个人学习与小型应用。</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://memfiredb.com/?utm_source=zhhwj">memfiredb</a>，有中文支持，但是空间稍小，而且只能创建两个仓库…</li>
+<li><a target="_blank" rel="noopener" href="https://app.planetscale.com/">planetscale</a>，虽然是美国网站，但是直接访问没有任何问题，新建仓库时选择默认节点(比如我默认是在弗吉尼亚)即可。</li>
+</ol>
+<p>同时在本地安装mysql cli，需要GUI的话推荐使用Navicat或者EMMA这些主流GUI，或者直接在命令行敲键盘2333<br>具体的创建更改删除表等指令可以参考菜鸟教程或者廖雪峰的网站(廖雪峰的SQL教程烂尾且只适合小白快速入门，作为字典还是太浅薄了)</p>
+<p>TODO 写一个微信小程序，可以实现在线读取显示云数据库内容，比如我曾到访过的国家城市等。</p>
 
                 
             </div>
@@ -506,7 +453,7 @@ graph<span class="token punctuation">[</span><span class="token string">"jonny"<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://rd-zhang.github.io/2022/12/16/suan-fa-tu-jie-yue-du-bi-ji/">https://rd-zhang.github.io/2022/12/16/suan-fa-tu-jie-yue-du-bi-ji/</a>
+                    <a href="https://rd-zhang.github.io/2023/01/06/da-jian-di-yi-ge-yun-shu-ju-ku/">https://rd-zhang.github.io/2023/01/06/da-jian-di-yi-ge-yun-shu-ju-ku/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -544,12 +491,16 @@ graph<span class="token punctuation">[</span><span class="token string">"jonny"<
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
+                                <a href="/tags/%E5%88%86%E4%BA%AB/">
+                                    <span class="chip bg-color">分享</span>
                                 </a>
                             
-                                <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                    <span class="chip bg-color">算法</span>
+                                <a href="/tags/MySQL/">
+                                    <span class="chip bg-color">MySQL</span>
+                                </a>
+                            
+                                <a href="/tags/SQL/">
+                                    <span class="chip bg-color">SQL</span>
                                 </a>
                             
                         </div>
@@ -719,50 +670,56 @@ graph<span class="token punctuation">[</span><span class="token string">"jonny"<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/12/27/suan-fa-fu-za-du/">
+                <a href="/2023/01/06/da-jian-di-yi-ge-yun-shu-ju-ku/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="算法复杂度">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="搭建你的第一个云数据库">
                         
-                        <span class="card-title">算法复杂度</span>
+                        <span class="card-title">搭建你的第一个云数据库</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            算法复杂度（Algorithm complexity）：在问题的输入规模为 n 的条件下，程序的时间使用情况和空间使用情况。
+                            MySQL是一个小型的开源的关系型数据库管理系统，它规模小，功能有限，但是它体积小、速度快、成本低
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
+                            <a href="/categories/SQL/" class="post-category">
+                                    SQL
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">分享</span>
                     </a>
                     
-                    <a href="/tags/%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">算法</span>
+                    <a href="/tags/MySQL/">
+                        <span class="chip bg-color">MySQL</span>
+                    </a>
+                    
+                    <a href="/tags/SQL/">
+                        <span class="chip bg-color">SQL</span>
                     </a>
                     
                 </div>
@@ -776,31 +733,31 @@ graph<span class="token punctuation">[</span><span class="token string">"jonny"<
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/12/15/c-ba-da-ji-chu-shu-ju-jie-gou/">
+                <a href="/2022/12/30/chuang-jian-docker-jing-xiang-bing-yun-xing-jiao-ben/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="c++八大基础数据结构">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="创建docker镜像并运行脚本">
                         
-                        <span class="card-title">c++八大基础数据结构</span>
+                        <span class="card-title">创建docker镜像并运行脚本</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            数据结构是指相互之间存在着一种或多种关系的数据元素的集合和该集合中数据元素之间的关系组成
+                            “Docker是天才一般的发明。” —— 图图
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
-                                    数据结构
+                            <a href="/categories/Docker/" class="post-category">
+                                    Docker
                                 </a>
                             
                             
@@ -810,12 +767,12 @@ graph<span class="token punctuation">[</span><span class="token string">"jonny"<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/c/">
-                        <span class="chip bg-color">c++</span>
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
-                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-                        <span class="chip bg-color">数据结构</span>
+                    <a href="/tags/Docker/">
+                        <span class="chip bg-color">Docker</span>
                     </a>
                     
                 </div>

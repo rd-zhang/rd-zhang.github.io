@@ -6,7 +6,7 @@
   <link href="https://rd-zhang.github.io/atom.xml" rel="self"/>
   
   <link href="https://rd-zhang.github.io/"/>
-  <updated>2023-01-03T07:30:18.749Z</updated>
+  <updated>2023-01-06T06:33:47.327Z</updated>
   <id>https://rd-zhang.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建你的第一个云数据库</title>
+    <link href="https://rd-zhang.github.io/2023/01/06/da-jian-di-yi-ge-yun-shu-ju-ku/"/>
+    <id>https://rd-zhang.github.io/2023/01/06/da-jian-di-yi-ge-yun-shu-ju-ku/</id>
+    <published>2023-01-05T16:00:00.000Z</published>
+    <updated>2023-01-06T06:33:47.327Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近开始接触数据库，第一个应用的自然是大名鼎鼎的MySQL。本地安装MySQL并不复杂，但是如何用数据库实现一些有趣的事值得深究。&lt;/p&gt;
+&lt;p&gt;经过探索，我发现了两个宝藏云数据库网站 &lt;strong&gt;完全免费！&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="SQL" scheme="https://rd-zhang.github.io/categories/SQL/"/>
+    
+    
+    <category term="分享" scheme="https://rd-zhang.github.io/tags/%E5%88%86%E4%BA%AB/"/>
+    
+    <category term="MySQL" scheme="https://rd-zhang.github.io/tags/MySQL/"/>
+    
+    <category term="SQL" scheme="https://rd-zhang.github.io/tags/SQL/"/>
+    
+  </entry>
   
   <entry>
     <title>创建docker镜像并运行脚本</title>
@@ -504,31 +534,6 @@
     
     
     <category term="c++" scheme="https://rd-zhang.github.io/tags/c/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>变得更强</title>
-    <link href="https://rd-zhang.github.io/2022/12/01/bian-de-geng-qiang/"/>
-    <id>https://rd-zhang.github.io/2022/12/01/bian-de-geng-qiang/</id>
-    <published>2022-11-30T16:00:00.000Z</published>
-    <updated>2023-01-03T07:30:24.256Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;漫画资本论&quot;&gt;&lt;a href=&quot;#漫画资本论&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="变得更强" scheme="https://rd-zhang.github.io/categories/%E5%8F%98%E5%BE%97%E6%9B%B4%E5%BC%BA/"/>
-    
-    
-    <category term="变得更强" scheme="https://rd-zhang.github.io/tags/%E5%8F%98%E5%BE%97%E6%9B%B4%E5%BC%BA/"/>
     
   </entry>
   
