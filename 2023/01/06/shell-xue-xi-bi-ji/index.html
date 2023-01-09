@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="c++函数返回多值方法, 图Tu的小站">
+    <meta name="keywords" content="Shell学习笔记, 图Tu的小站">
     <meta name="description" content="智慧可以移山">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>c++函数返回多值方法 | 图Tu的小站</title>
+    <title>Shell学习笔记 | 图Tu的小站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">c++函数返回多值方法</h1>
+                    <h1 class="description center-align post-title">Shell学习笔记</h1>
                 </div>
             </div>
         </div>
@@ -350,8 +350,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/c/">
-                                <span class="chip bg-color">c++</span>
+                            <a href="/tags/Shell/">
+                                <span class="chip bg-color">Shell</span>
                             </a>
                         
                     </div>
@@ -362,8 +362,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/c/" class="post-category">
-                                c++
+                            <a href="/categories/Shell/" class="post-category">
+                                Shell
                             </a>
                         
                     </div>
@@ -375,21 +375,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-12-12
+                    2023-01-06
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-03
+                    2023-01-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    750
+                    664
                 </div>
                 
 
@@ -411,119 +411,68 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>用惯了Python，才发现c++函数默认是返回一个值/无返回值…<br>但是这怎么能难道聪明的工程师们，下面总结几个c++常用的返回多值办法，std::pair在此不讨论，因为他只能返回两个值…</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43685921/article/details/123854007">C++函数返回多个值：结构体、tuple</a><br><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/returning-multiple-values-from-a-function-using-tuple-and-pair-in-c/">Returning multiple values from a function using Tuple and Pair in C++</a></p>
-<h3 id="使用tuple返回多个值"><a href="#使用tuple返回多个值" class="headerlink" title="使用tuple返回多个值"></a>使用tuple返回多个值</h3><p>相比于结构体，要实现函数返回多个值的方法，使用tuple更为简洁、灵活。<br>实现步骤：<br>1.定义函数f(x):类型为tuple<br>2.函数返回多个值:使用make_tuple(result1,result2,…)<br>3.使用函数结果：result=f(x)<br>4.取函数返回值：result1=get&lt;0&gt;(result)； result2=get&lt;1&gt;(result);</p>
-<pre class=" language-cpp"><code class="language-cpp">tuple<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">float</span><span class="token operator">></span>  <span class="token function">filterFloorPoint</span><span class="token punctuation">(</span> <span class="token keyword">int</span> max_iterations<span class="token punctuation">,</span><span class="token keyword">float</span> in_floor_max_angle<span class="token punctuation">,</span><span class="token keyword">float</span> Distance_Threshold<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">int</span> result_iterations<span class="token punctuation">;</span>
-    <span class="token keyword">float</span> result_angle_add_distance<span class="token punctuation">;</span>
-    result_iterations<span class="token operator">=</span>max_iterations<span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">;</span>
-    result_angle_add_distance<span class="token operator">=</span>in_floor_max_angle<span class="token operator">*</span>Distance_Threshold<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//此时，我们想要函数返回result_iterations和result_angle_add_distance两个值</span>
+                <p>记录shell学习过程中一些重要的点</p>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>注意，赋值号=的周围不能有空格，这可能和你熟悉的大部分编程语言都不一样。<br><br></p>
+<p>推荐给所有变量加上花括号{ }，这是个良好的编程习惯。<br><br></p>
+<p>如果变量的内容是数字，那么可以不加引号；如果真的需要原样输出就加单引号；其他没有特别要求的字符串等最好都加上双引号，定义变量时加双引号是最常见的使用场景。<br><br></p>
+<p>使用 <strong>readonly</strong> 命令可以将变量定义为只读变量，只读变量的值不能被改变。<br><br></p>
+<p>使用 <strong>unset</strong> 命令可以删除变量。<br><br></p>
+<h3 id="命令替换"><a href="#命令替换" class="headerlink" title="命令替换"></a>命令替换</h3><p>==variable=`commands`==  OR<br>==variable=$(commands)==<br> 两种方式都可以，但是推荐第二种，因为反引号毕竟看起来像单引号，有时候会对查看代码造成困扰，不过$() 仅在 Bash Shell 中有效，而反引号可在多种 Shell 中使用。<br><br></p>
+<h3 id="Shell位置参数（命令行参数）"><a href="#Shell位置参数（命令行参数）" class="headerlink" title="Shell位置参数（命令行参数）"></a>Shell位置参数（命令行参数）</h3><p>运行 Shell 脚本文件时我们可以给它传递一些参数，这些参数在脚本文件内部可以使用$n的形式来接收，例如，$1 表示第一个参数，$2 表示第二个参数，依次类推。</p>
+<br>
 
-<span class="token comment" spellcheck="true">//使用make_tuple将要返回的数据写在()里面即可，注意数据类型的顺序</span>
-    <span class="token keyword">return</span> <span class="token function">make_tuple</span><span class="token punctuation">(</span>result_iterations<span class="token punctuation">,</span>result_angle_add_distance<span class="token punctuation">)</span><span class="token punctuation">;</span> 
-<span class="token punctuation">}</span>
+<h3 id="Shell特殊变量：Shell-、-、-、-、"><a href="#Shell特殊变量：Shell-、-、-、-、" class="headerlink" title="Shell特殊变量：Shell $#、$*、$@、$?、$$"></a>Shell特殊变量：Shell $#、$*、$@、$?、$$</h3><table>
+<thead>
+<tr>
+<th>变量</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$0</td>
+<td>当前脚本的文件名。</td>
+</tr>
+<tr>
+<td>$n</td>
+<td>当前脚本的文件名。</td>
+</tr>
+<tr>
+<td>$#</td>
+<td>传递给脚本或函数的参数个数。</td>
+</tr>
+<tr>
+<td>$*</td>
+<td>传递给脚本或函数的所有参数。(作为一个整体)</td>
+</tr>
+<tr>
+<td>$@</td>
+<td>传递给脚本或函数的所有参数。(每个作为独立个体)</td>
+</tr>
+<tr>
+<td>$?</td>
+<td>上个命令的退出状态，或函数的返回值。</td>
+</tr>
+<tr>
+<td>$$</td>
+<td>当前 Shell 进程 ID。</td>
+</tr>
+</tbody></table>
+<br>
 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">int</span> max_iterations<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">;</span>
-    <span class="token keyword">float</span> in_floor_max_angle<span class="token operator">=</span><span class="token number">10.0</span><span class="token punctuation">;</span>
-    <span class="token keyword">float</span> Distance_Threshold<span class="token operator">=</span><span class="token number">10.0</span><span class="token punctuation">;</span>
-    
-    tuple<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">float</span><span class="token operator">></span>  get_filterFloorPoint_result<span class="token punctuation">;</span>
-     <span class="token comment" spellcheck="true">//调用 filterFloorPoint 方法</span>
-    get_filterFloorPoint_result<span class="token operator">=</span><span class="token function">filterFloorPoint</span><span class="token punctuation">(</span>max_iterations<span class="token punctuation">,</span>in_floor_max_angle<span class="token punctuation">,</span>Distance_Threshold<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    without_floor_cloud_ptr<span class="token operator">=</span>get<span class="token operator">&lt;</span><span class="token number">0</span><span class="token operator">></span><span class="token punctuation">(</span>get_filterFloorPoint_result<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//取第一个值</span>
-    only_floor_cloud_ptr<span class="token operator">=</span>get<span class="token operator">&lt;</span><span class="token number">1</span><span class="token operator">></span><span class="token punctuation">(</span>get_filterFloorPoint_result<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//取第二个值</span>
-     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<h3 id="Shell字符串"><a href="#Shell字符串" class="headerlink" title="Shell字符串"></a>Shell字符串</h3><pre class=" language-shell"><code class="language-shell">str1=c.biancheng.net
+str2="shell script"
+str3='C语言中文网'
 </code></pre>
-<p>另一个例子(对比pair和tuple)</p>
-<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span>
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-  
-<span class="token comment" spellcheck="true">// A Method that returns multiple values using</span>
-<span class="token comment" spellcheck="true">// tuple in C++.</span>
-tuple<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">char</span><span class="token operator">></span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token keyword">int</span> n1<span class="token punctuation">,</span> <span class="token keyword">int</span> n2<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">// Packing values to return a tuple</span>
-    <span class="token keyword">return</span> <span class="token function">make_tuple</span><span class="token punctuation">(</span>n2<span class="token punctuation">,</span> n1<span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>             
-<span class="token punctuation">}</span>
-  
-<span class="token comment" spellcheck="true">// A Method returns a pair of values using pair</span>
-pair<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">></span> <span class="token function">foo1</span><span class="token punctuation">(</span><span class="token keyword">int</span> num1<span class="token punctuation">,</span> <span class="token keyword">int</span> num2<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">// Packing two values to return a pair </span>
-    <span class="token keyword">return</span> <span class="token function">make_pair</span><span class="token punctuation">(</span>num2<span class="token punctuation">,</span> num1<span class="token punctuation">)</span><span class="token punctuation">;</span>            
-<span class="token punctuation">}</span>
-  
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">int</span> a<span class="token punctuation">,</span>b<span class="token punctuation">;</span>
-    <span class="token keyword">char</span> cc<span class="token punctuation">;</span>
-      
-    <span class="token comment" spellcheck="true">// Unpack the elements returned by foo</span>
-    <span class="token function">tie</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> cc<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      
-      
-    <span class="token comment" spellcheck="true">// Storing  returned values in a pair </span>
-    pair<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">></span> p <span class="token operator">=</span> <span class="token function">foo1</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
-      
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Values returned by tuple: "</span><span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> cc <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-      
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Values returned by Pair: "</span><span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> p<span class="token punctuation">.</span>first <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> p<span class="token punctuation">.</span>second<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<p>其中，<code>#include&lt;bits/stdc++.h&gt;</code> 是一个万能头文件，包含了绝大多数常用的头文件！</p>
-<h3 id="使用结构体返回多个值"><a href="#使用结构体返回多个值" class="headerlink" title="使用结构体返回多个值"></a>使用结构体返回多个值</h3><p>实现步骤：<br>1.先定义一个结构体<br>2.准备我们要实现的函数(需要返回多个值)<br>3.在要实现的函数内调用结构体返回多个值<br>4.使用函数返回结果</p>
-<pre class=" language-cpp"><code class="language-cpp">step <span class="token number">1</span> <span class="token operator">:</span>定义结构体 
-<span class="token keyword">struct</span>  PointStruct
-<span class="token punctuation">{</span>
-    <span class="token keyword">float</span> without_floor<span class="token punctuation">;</span>
-    <span class="token keyword">int</span> only_floor<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre>
-<pre class=" language-cpp"><code class="language-cpp">step <span class="token number">2</span> <span class="token operator">:</span>定义函数 
-<span class="token comment" spellcheck="true">//定义了一个返回值为PointStruct的函数，函数名为filterFloorPoint</span>
-PointStruct <span class="token function">filterFloorPoint</span><span class="token punctuation">(</span> <span class="token keyword">int</span> max_iterations<span class="token punctuation">,</span><span class="token keyword">float</span> in_floor_max_angle<span class="token punctuation">,</span><span class="token keyword">float</span> Distance_Threshold<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">int</span> result_iterations<span class="token punctuation">;</span>
-    <span class="token keyword">float</span> result_angle_add_distance<span class="token punctuation">;</span>
-    result_iterations<span class="token operator">=</span>max_iterations<span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">;</span>
-    result_angle_add_distance<span class="token operator">=</span>in_floor_max_angle<span class="token operator">*</span>Distance_Threshold<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//此时，我们想要函数返回result_iterations和result_angle_add_distance两个值</span>
-
-
-    <span class="token comment" spellcheck="true">//step 3:调用结构体返回多个值 </span>
-    <span class="token comment" spellcheck="true">//调用PointStruct结构体返回多个值 </span>
-    PointStruct use_PointStruct<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//use_PointStruct 可以换成你自己想要的名称</span>
-    use_PointStruct<span class="token punctuation">.</span>without_floor<span class="token operator">=</span>result_iterations<span class="token punctuation">;</span>
-    use_PointStruct<span class="token punctuation">.</span>only_floor<span class="token operator">=</span>result_angle_add_distance<span class="token punctuation">;</span>
-
-    <span class="token keyword">return</span> use_PointStruct<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//只需要返回 use_PointStruct即可</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-     <span class="token comment" spellcheck="true">//step 4:调用结构体返回的多个值</span>
-    <span class="token keyword">int</span> max_iterations<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">;</span>
-    <span class="token keyword">float</span> in_floor_max_angle<span class="token operator">=</span><span class="token number">10.0</span><span class="token punctuation">;</span>
-    <span class="token keyword">float</span> Distance_Threshold<span class="token operator">=</span><span class="token number">10.0</span><span class="token punctuation">;</span>
-    
-    <span class="token keyword">int</span> without_floor_cloud_ptr<span class="token punctuation">;</span>
-    <span class="token keyword">float</span> only_floor_cloud_ptr<span class="token punctuation">;</span>  
-    PointStruct  use_PointStruct_now<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//调用PointStruct结构体</span>
-    
-     use_PointStruct_now<span class="token operator">=</span><span class="token function">filterFloorPoint</span><span class="token punctuation">(</span>max_iterations<span class="token punctuation">,</span>in_floor_max_angle<span class="token punctuation">,</span>Distance_Threshold<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//调用函数</span>
-     without_floor_cloud_ptr<span class="token operator">=</span>use_PointStruct_now<span class="token punctuation">.</span>without_floor<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//取第一个函数返回值</span>
-     only_floor_cloud_ptr<span class="token operator">=</span>use_PointStruct_now<span class="token punctuation">.</span>only_floor<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//取第二个函数返回值</span>
-     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
+<ol>
+<li><p>由单引号’ ‘包围的字符串：<br>任何字符都会原样输出，在其中使用变量是无效的。<br>字符串中不能出现单引号，即使对单引号进行转义也不行。</p>
+</li>
+<li><p>由双引号” “包围的字符串：<br>如果其中包含了某个变量，那么该变量会被解析（得到该变量的值），而不是原样输出。<br>字符串中可以出现双引号，只要它被转义了就行。</p>
+</li>
+<li><p>不被引号包围的字符串<br>不被引号包围的字符串中出现变量时也会被解析，这一点和双引号” “包围的字符串一样。<br>字符串中不能出现空格，否则空格后边的字符串会作为其他变量或者命令解析。</p>
+</li>
+</ol>
+<p>在 Shell 中获取字符串长度很简单，具体方法如下：</p>
+<p>```shell<br>$</p>
 
                 
             </div>
@@ -550,7 +499,7 @@ PointStruct <span class="token function">filterFloorPoint</span><span class="tok
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://rd-zhang.github.io/2022/12/12/c-han-shu-fan-hui-duo-zhi-zong-jie/">https://rd-zhang.github.io/2022/12/12/c-han-shu-fan-hui-duo-zhi-zong-jie/</a>
+                    <a href="https://rd-zhang.github.io/2023/01/06/shell-xue-xi-bi-ji/">https://rd-zhang.github.io/2023/01/06/shell-xue-xi-bi-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -588,8 +537,8 @@ PointStruct <span class="token function">filterFloorPoint</span><span class="tok
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/c/">
-                                    <span class="chip bg-color">c++</span>
+                                <a href="/tags/Shell/">
+                                    <span class="chip bg-color">Shell</span>
                                 </a>
                             
                         </div>
@@ -763,31 +712,31 @@ PointStruct <span class="token function">filterFloorPoint</span><span class="tok
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/12/14/bian-xie-gao-zhi-liang-dai-ma-gai-shan-python-cheng-xu-de-91-ge-jian-yi/">
+                <a href="/2023/01/06/da-jian-di-yi-ge-yun-shu-ju-ku/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="编写高质量代码改善Python程序的 91 个建议">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="搭建你的第一个云数据库">
                         
-                        <span class="card-title">编写高质量代码改善Python程序的 91 个建议</span>
+                        <span class="card-title">搭建你的第一个云数据库</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Python作为脚本语言，快速开发是它的优势。本文属于锦上添花。
+                            MySQL是一个小型的开源的关系型数据库管理系统，它规模小，功能有限，但是它体积小、速度快、成本低
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-14
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-06
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="post-category">
-                                    读书
+                            <a href="/categories/SQL/" class="post-category">
+                                    SQL
                                 </a>
                             
                             
@@ -797,8 +746,16 @@ PointStruct <span class="token function">filterFloorPoint</span><span class="tok
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">分享</span>
+                    </a>
+                    
+                    <a href="/tags/MySQL/">
+                        <span class="chip bg-color">MySQL</span>
+                    </a>
+                    
+                    <a href="/tags/SQL/">
+                        <span class="chip bg-color">SQL</span>
                     </a>
                     
                 </div>
@@ -812,31 +769,31 @@ PointStruct <span class="token function">filterFloorPoint</span><span class="tok
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/12/12/ru-he-shi-python-yun-xing-geng-kuai/">
+                <a href="/2022/12/30/chuang-jian-docker-jing-xiang-bing-yun-xing-jiao-ben/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="如何使Python运行更快">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="创建docker镜像并运行脚本">
                         
-                        <span class="card-title">如何使Python运行更快</span>
+                        <span class="card-title">创建docker镜像并运行脚本</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Python 是一种脚本语言，相比 C/C++ 这样的编译语言，在效率和性能方面存在一些不足。其实，仍然有一些办法使它跑得更快一些
+                            “Docker是天才一般的发明。” —— 图图
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
+                            <a href="/categories/Docker/" class="post-category">
+                                    Docker
                                 </a>
                             
                             
@@ -848,6 +805,10 @@ PointStruct <span class="token function">filterFloorPoint</span><span class="tok
                     
                     <a href="/tags/Python/">
                         <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                    <a href="/tags/Docker/">
+                        <span class="chip bg-color">Docker</span>
                     </a>
                     
                 </div>
