@@ -6,7 +6,7 @@
   <link href="https://rd-zhang.github.io/atom.xml" rel="self"/>
   
   <link href="https://rd-zhang.github.io/"/>
-  <updated>2023-01-06T06:33:47.327Z</updated>
+  <updated>2023-01-09T04:03:06.031Z</updated>
   <id>https://rd-zhang.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Shell学习笔记</title>
+    <link href="https://rd-zhang.github.io/2023/01/06/shell-xue-xi-bi-ji/"/>
+    <id>https://rd-zhang.github.io/2023/01/06/shell-xue-xi-bi-ji/</id>
+    <published>2023-01-05T16:00:00.000Z</published>
+    <updated>2023-01-09T04:03:06.031Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;记录shell学习过程中一些重要的点&lt;/p&gt;
+&lt;h3 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Shell" scheme="https://rd-zhang.github.io/categories/Shell/"/>
+    
+    
+    <category term="Shell" scheme="https://rd-zhang.github.io/tags/Shell/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建你的第一个云数据库</title>
@@ -47,28 +73,29 @@
   </entry>
   
   <entry>
-    <title>Shell学习笔记</title>
-    <link href="https://rd-zhang.github.io/2023/01/06/shell-xue-xi-bi-ji/"/>
-    <id>https://rd-zhang.github.io/2023/01/06/shell-xue-xi-bi-ji/</id>
-    <published>2023-01-05T16:00:00.000Z</published>
-    <updated>2023-01-09T04:03:06.031Z</updated>
+    <title>2023年目标</title>
+    <link href="https://rd-zhang.github.io/2023/01/01/2023-mu-biao/"/>
+    <id>https://rd-zhang.github.io/2023/01/01/2023-mu-biao/</id>
+    <published>2022-12-31T16:00:00.000Z</published>
+    <updated>2023-01-10T06:55:24.598Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;记录shell学习过程中一些重要的点&lt;/p&gt;
-&lt;h3 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;不知不觉已经2023年了，我也刚刚完成在校生到工程师的转变。&lt;/p&gt;
+&lt;p&gt;2023年给自己立下几个flag，希望能够变得更强：&lt;/p&gt;
+&lt;h4 id=&quot;1-拓展技术广度&quot;&gt;&lt;a href=&quot;#1-拓展技术广度&quot; class=&quot;headerlink&quot; title=&quot;1.</summary>
         
       
     
     
     
-    <category term="Shell" scheme="https://rd-zhang.github.io/categories/Shell/"/>
+    <category term="变得更强" scheme="https://rd-zhang.github.io/categories/%E5%8F%98%E5%BE%97%E6%9B%B4%E5%BC%BA/"/>
     
     
-    <category term="Shell" scheme="https://rd-zhang.github.io/tags/Shell/"/>
+    <category term="变得更强" scheme="https://rd-zhang.github.io/tags/%E5%8F%98%E5%BE%97%E6%9B%B4%E5%BC%BA/"/>
     
   </entry>
   
@@ -508,32 +535,6 @@
     
     
     <category term="读书" scheme="https://rd-zhang.github.io/tags/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c++实用的库</title>
-    <link href="https://rd-zhang.github.io/2022/12/01/c-you-yong-de-ku/"/>
-    <id>https://rd-zhang.github.io/2022/12/01/c-you-yong-de-ku/</id>
-    <published>2022-11-30T16:00:00.000Z</published>
-    <updated>2023-01-03T07:29:59.101Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;c++和Python不同，后者有pip这样的工具来管理模组。c++很多库需要自己下载源码编译。本文旨在分享那些实用的库的安装使用方法&lt;/p&gt;
-&lt;h3 id=&quot;Boost库&quot;&gt;&lt;a href=&quot;#Boost库&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="c++" scheme="https://rd-zhang.github.io/categories/c/"/>
-    
-    
-    <category term="c++" scheme="https://rd-zhang.github.io/tags/c/"/>
     
   </entry>
   

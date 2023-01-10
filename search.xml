@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Shell学习笔记</title>
+      <link href="/2023/01/06/shell-xue-xi-bi-ji/"/>
+      <url>/2023/01/06/shell-xue-xi-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<p>记录shell学习过程中一些重要的点</p><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>注意，赋值号=的周围不能有空格，这可能和你熟悉的大部分编程语言都不一样。<br><br></p><p>推荐给所有变量加上花括号{ }，这是个良好的编程习惯。<br><br></p><p>如果变量的内容是数字，那么可以不加引号；如果真的需要原样输出就加单引号；其他没有特别要求的字符串等最好都加上双引号，定义变量时加双引号是最常见的使用场景。<br><br></p><p>使用 <strong>readonly</strong> 命令可以将变量定义为只读变量，只读变量的值不能被改变。<br><br></p><p>使用 <strong>unset</strong> 命令可以删除变量。<br><br></p><h3 id="命令替换"><a href="#命令替换" class="headerlink" title="命令替换"></a>命令替换</h3><p>==variable=`commands`==  OR<br>==variable=$(commands)==<br> 两种方式都可以，但是推荐第二种，因为反引号毕竟看起来像单引号，有时候会对查看代码造成困扰，不过$() 仅在 Bash Shell 中有效，而反引号可在多种 Shell 中使用。<br><br></p><h3 id="Shell位置参数（命令行参数）"><a href="#Shell位置参数（命令行参数）" class="headerlink" title="Shell位置参数（命令行参数）"></a>Shell位置参数（命令行参数）</h3><p>运行 Shell 脚本文件时我们可以给它传递一些参数，这些参数在脚本文件内部可以使用$n的形式来接收，例如，$1 表示第一个参数，$2 表示第二个参数，依次类推。</p><br><h3 id="Shell特殊变量：Shell-、-、-、-、"><a href="#Shell特殊变量：Shell-、-、-、-、" class="headerlink" title="Shell特殊变量：Shell $#、$*、$@、$?、$$"></a>Shell特殊变量：Shell $#、$*、$@、$?、$$</h3><table><thead><tr><th>变量</th><th>含义</th></tr></thead><tbody><tr><td>$0</td><td>当前脚本的文件名。</td></tr><tr><td>$n</td><td>当前脚本的文件名。</td></tr><tr><td>$#</td><td>传递给脚本或函数的参数个数。</td></tr><tr><td>$*</td><td>传递给脚本或函数的所有参数。(作为一个整体)</td></tr><tr><td>$@</td><td>传递给脚本或函数的所有参数。(每个作为独立个体)</td></tr><tr><td>$?</td><td>上个命令的退出状态，或函数的返回值。</td></tr><tr><td>$$</td><td>当前 Shell 进程 ID。</td></tr></tbody></table><br><h3 id="Shell字符串"><a href="#Shell字符串" class="headerlink" title="Shell字符串"></a>Shell字符串</h3><pre class=" language-shell"><code class="language-shell">str1=c.biancheng.netstr2="shell script"str3='C语言中文网'</code></pre><ol><li><p>由单引号’ ‘包围的字符串：<br>任何字符都会原样输出，在其中使用变量是无效的。<br>字符串中不能出现单引号，即使对单引号进行转义也不行。</p></li><li><p>由双引号” “包围的字符串：<br>如果其中包含了某个变量，那么该变量会被解析（得到该变量的值），而不是原样输出。<br>字符串中可以出现双引号，只要它被转义了就行。</p></li><li><p>不被引号包围的字符串<br>不被引号包围的字符串中出现变量时也会被解析，这一点和双引号” “包围的字符串一样。<br>字符串中不能出现空格，否则空格后边的字符串会作为其他变量或者命令解析。</p></li></ol><p>在 Shell 中获取字符串长度很简单，具体方法如下：</p><p>```shell<br>$</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Shell </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Shell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>搭建你的第一个云数据库</title>
       <link href="/2023/01/06/da-jian-di-yi-ge-yun-shu-ju-ku/"/>
       <url>/2023/01/06/da-jian-di-yi-ge-yun-shu-ju-ku/</url>
@@ -33,23 +58,23 @@
     
     
     <entry>
-      <title>Shell学习笔记</title>
-      <link href="/2023/01/06/shell-xue-xi-bi-ji/"/>
-      <url>/2023/01/06/shell-xue-xi-bi-ji/</url>
+      <title>2023年目标</title>
+      <link href="/2023/01/01/2023-mu-biao/"/>
+      <url>/2023/01/01/2023-mu-biao/</url>
       
-        <content type="html"><![CDATA[<p>记录shell学习过程中一些重要的点</p><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>注意，赋值号=的周围不能有空格，这可能和你熟悉的大部分编程语言都不一样。<br><br></p><p>推荐给所有变量加上花括号{ }，这是个良好的编程习惯。<br><br></p><p>如果变量的内容是数字，那么可以不加引号；如果真的需要原样输出就加单引号；其他没有特别要求的字符串等最好都加上双引号，定义变量时加双引号是最常见的使用场景。<br><br></p><p>使用 <strong>readonly</strong> 命令可以将变量定义为只读变量，只读变量的值不能被改变。<br><br></p><p>使用 <strong>unset</strong> 命令可以删除变量。<br><br></p><h3 id="命令替换"><a href="#命令替换" class="headerlink" title="命令替换"></a>命令替换</h3><p>==variable=`commands`==  OR<br>==variable=$(commands)==<br> 两种方式都可以，但是推荐第二种，因为反引号毕竟看起来像单引号，有时候会对查看代码造成困扰，不过$() 仅在 Bash Shell 中有效，而反引号可在多种 Shell 中使用。<br><br></p><h3 id="Shell位置参数（命令行参数）"><a href="#Shell位置参数（命令行参数）" class="headerlink" title="Shell位置参数（命令行参数）"></a>Shell位置参数（命令行参数）</h3><p>运行 Shell 脚本文件时我们可以给它传递一些参数，这些参数在脚本文件内部可以使用$n的形式来接收，例如，$1 表示第一个参数，$2 表示第二个参数，依次类推。</p><br><h3 id="Shell特殊变量：Shell-、-、-、-、"><a href="#Shell特殊变量：Shell-、-、-、-、" class="headerlink" title="Shell特殊变量：Shell $#、$*、$@、$?、$$"></a>Shell特殊变量：Shell $#、$*、$@、$?、$$</h3><table><thead><tr><th>变量</th><th>含义</th></tr></thead><tbody><tr><td>$0</td><td>当前脚本的文件名。</td></tr><tr><td>$n</td><td>当前脚本的文件名。</td></tr><tr><td>$#</td><td>传递给脚本或函数的参数个数。</td></tr><tr><td>$*</td><td>传递给脚本或函数的所有参数。(作为一个整体)</td></tr><tr><td>$@</td><td>传递给脚本或函数的所有参数。(每个作为独立个体)</td></tr><tr><td>$?</td><td>上个命令的退出状态，或函数的返回值。</td></tr><tr><td>$$</td><td>当前 Shell 进程 ID。</td></tr></tbody></table><br><h3 id="Shell字符串"><a href="#Shell字符串" class="headerlink" title="Shell字符串"></a>Shell字符串</h3><pre class=" language-shell"><code class="language-shell">str1=c.biancheng.netstr2="shell script"str3='C语言中文网'</code></pre><ol><li><p>由单引号’ ‘包围的字符串：<br>任何字符都会原样输出，在其中使用变量是无效的。<br>字符串中不能出现单引号，即使对单引号进行转义也不行。</p></li><li><p>由双引号” “包围的字符串：<br>如果其中包含了某个变量，那么该变量会被解析（得到该变量的值），而不是原样输出。<br>字符串中可以出现双引号，只要它被转义了就行。</p></li><li><p>不被引号包围的字符串<br>不被引号包围的字符串中出现变量时也会被解析，这一点和双引号” “包围的字符串一样。<br>字符串中不能出现空格，否则空格后边的字符串会作为其他变量或者命令解析。</p></li></ol><p>在 Shell 中获取字符串长度很简单，具体方法如下：</p><p>```shell<br>$</p>]]></content>
+        <content type="html"><![CDATA[<p>不知不觉已经2023年了，我也刚刚完成在校生到工程师的转变。</p><p>2023年给自己立下几个flag，希望能够变得更强：</p><h4 id="1-拓展技术广度"><a href="#1-拓展技术广度" class="headerlink" title="1. 拓展技术广度"></a>1. 拓展技术广度</h4><p>了解常见技术基本原理和用法，做一些hello world，包括且不限于：</p><ul><li>Shell</li><li>SQL</li><li>Python Tkinter</li><li>JavaScript</li><li>PyQT</li><li>微信小程序<br>……</li></ul><h4 id="2-巩固Python开发能力"><a href="#2-巩固Python开发能力" class="headerlink" title="2. 巩固Python开发能力"></a>2. 巩固Python开发能力</h4><p>做一些小项目，比如写桌游脚本，实用的爬虫程序，自动化办公程序等</p><h4 id="3-完成c-的进阶"><a href="#3-完成c-的进阶" class="headerlink" title="3. 完成c++的进阶"></a>3. 完成c++的进阶</h4><p>逆水行舟不进则退，c++入门后要趁热打铁，除了看完 c++ primer，还要多练手，多看一些项目源代码，可以把写过的python项目用c++写一遍</p><h4 id="4-算法和数据结构进阶"><a href="#4-算法和数据结构进阶" class="headerlink" title="4. 算法和数据结构进阶"></a>4. 算法和数据结构进阶</h4><p>反复看算法导论以及一些网站教程，多刷题，争取达到leetcode 500 题(中等以上题150道)</p>]]></content>
       
       
       <categories>
           
-          <category> Shell </category>
+          <category> 变得更强 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Shell </tag>
+            <tag> 变得更强 </tag>
             
         </tags>
       
