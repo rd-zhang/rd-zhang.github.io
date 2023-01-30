@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Vim最常用的命令大全</title>
+      <link href="/2023/01/29/vim-chang-yong-ming-ling/"/>
+      <url>/2023/01/29/vim-chang-yong-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<p>最最最最简单，使用频率最高的vim命令，掌握之后不敢说精通也算个vim高手了！</p><h3 id="vim三大模式"><a href="#vim三大模式" class="headerlink" title="vim三大模式"></a>vim三大模式</h3><h3 id="插入模式–进入-x2F-退出"><a href="#插入模式–进入-x2F-退出" class="headerlink" title="插入模式–进入/退出"></a>插入模式–进入/退出</h3><h3 id="移动光标-x2F-翻页"><a href="#移动光标-x2F-翻页" class="headerlink" title="移动光标/翻页"></a>移动光标/翻页</h3><h3 id="复制-x2F-剪切-x2F-粘贴-x2F-撤销-x2F-redo"><a href="#复制-x2F-剪切-x2F-粘贴-x2F-撤销-x2F-redo" class="headerlink" title="复制/剪切/粘贴/撤销/redo"></a>复制/剪切/粘贴/撤销/redo</h3><h3 id="vim批量操作"><a href="#vim批量操作" class="headerlink" title="vim批量操作"></a>vim批量操作</h3><h3 id="查找字符-串"><a href="#查找字符-串" class="headerlink" title="查找字符(串)"></a>查找字符(串)</h3><h3 id="保存-x2F-退出vim"><a href="#保存-x2F-退出vim" class="headerlink" title="保存/退出vim"></a>保存/退出vim</h3><p>剩下的功能，比如打开多个文档时分屏、移动光标到某行特定位置、找到下一个特殊字符等高级玩法不在此讨论。因为想要一口气记住vim所有命令是不现实的，况且vim只是一个工具，使用hjkl/上下左右键移动光标也慢不了多少。熟能生巧，形成自己的习惯和肌肉记忆才是王道！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> vim </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vim </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python高级玩法整理</title>
       <link href="/2023/01/11/python-gao-ji-wan-fa-zheng-li/"/>
       <url>/2023/01/11/python-gao-ji-wan-fa-zheng-li/</url>
