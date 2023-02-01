@@ -382,14 +382,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-31
+                    2023-02-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    890
+                    864
                 </div>
                 
 
@@ -422,8 +422,9 @@
 <h3 id="vim批量操作"><a href="#vim批量操作" class="headerlink" title="vim批量操作"></a>vim批量操作</h3><p>聪明的vim提供了一个骚操作，在任何命令前加上数字n，即可重复n次命令，比如<code>5yy</code>就是复制五行：）<br>基本上，数字可以跟大多数命令组合使用，自行探索即可</p>
 <h3 id="查找字符-串"><a href="#查找字符-串" class="headerlink" title="查找字符(串)"></a>查找字符(串)</h3><p>在功能模式下<br>查找单个字符为<code>f{char}</code>或者<code>F{char}</code>，区别是一个向下找一个向上找。但是其实如果向下没有找到vim会从头再找直到回到光标处(vim是不是很聪明hh)。所以只需要记忆一个就行<br>想要查找字符串，将f换成<code>/</code>符号，F换成<code>?</code>即可</p>
 <h3 id="替换字符"><a href="#替换字符" class="headerlink" title="替换字符"></a>替换字符</h3><p>在功能模式下<br>最常用的是全局替换：<code>:%s/&lt;target&gt;/&lt;replacement&gt;</code>，所有target都会被替换为replacement<br>替换仅当前行内、替换若干行target等高级功能请问谷歌</p>
-<h3 id="保存-x2F-退出vim"><a href="#保存-x2F-退出vim" class="headerlink" title="保存/退出vim"></a>保存/退出vim</h3><p>这应该是大多数人第一次使用vim最困惑的地方，“ctrl+c”怎么不管用了啊233333<br>在功能模式下键入<code>:</code>，然后再组合使用命令。这里其实可以理解为全局命令，相当于word里面最上面功能栏那些命令。<br>比如<code>:write</code>或者其缩写<code>:w</code>就是保存文档，(q)uit是退出，也可以组合使用<code>:wq</code>就是保存并退出；<code>:q!</code>为不保存退出。此外还有诸如<code>saveas</code>，<code>help</code>等命令，你可以通过tab补全方式找到。<br><br></p>
-<p>剩下的功能，比如打开多个文档时分屏、移动光标到某行特定位置、找到下一个特殊字符等高级玩法不在此讨论。因为想要一口气记住vim所有命令是不现实的，况且vim只是一个工具，使用hjkl/上下左右键移动光标也慢不了多少。熟能生巧，形成自己的习惯和肌肉记忆才是王道！</p>
+<h3 id="保存-x2F-退出vim"><a href="#保存-x2F-退出vim" class="headerlink" title="保存/退出vim"></a>保存/退出vim</h3><p>这应该是大多数人第一次使用vim最困惑的地方，“ctrl+c”怎么不管用了啊233333<br>在功能模式下键入<code>:</code>，然后再组合使用命令。这里其实可以理解为全局命令，相当于word里面最上面功能栏那些命令。<br>比如<code>:write</code>或者其缩写<code>:w</code>就是保存文档，(q)uit是退出，也可以组合使用<code>:wq</code>就是保存并退出；<code>:q!</code>为不保存退出。此外还有诸如<code>saveas</code>，<code>help</code>等命令，你可以通过tab补全方式找到。</p>
+<h3 id="多个tab切换与分屏"><a href="#多个tab切换与分屏" class="headerlink" title="多个tab切换与分屏"></a>多个tab切换与分屏</h3><p>一般在terminal中打开编辑单个文件不会涉及多tab，但是在vscode中使用vim经常面临多个tab切换<br><code>:tabn</code>可以切换到下一个tab，或者<code>ctrl+6</code>也是一样的</p>
+<p>涉及多个文件分屏的操作需要<code>:vsp + filename</code>，然后使用<code>ctrl+w+w</code>在窗口间切换</p>
 
                 
             </div>
@@ -804,7 +805,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">17.5k</span>&nbsp;字
+                class="white-color">17.4k</span>&nbsp;字
             
             
             
